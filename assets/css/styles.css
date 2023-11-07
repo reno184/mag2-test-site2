@@ -128,7 +128,6 @@ nav.fixed {
 
 .midnightHeader.white .logo {
   background-position: -0px 0%;
-    opacity: 0;
 }
 .midnightHeader.default .logo,
 .midnightHeader.black .logo {
@@ -148,6 +147,7 @@ nav.fixed {
 }
 .midnightHeader.full .logo {
   background-position: -0px 100%;
+  opacity: 0;
 }
 
 
@@ -159,30 +159,28 @@ header, section, footer {
   background: url(images/shop1.jpg) no-repeat 50% 50%;
   background-color: #151D28;
   background-size: cover;
-  height: 300px;
+
 }
 .step-one {
-  background: url(images/shop2.jpg) no-repeat 50% 50%;
+  background: url(images/background2.jpg) no-repeat 50% 50%;
   background-color: #15212A;
   background-size: cover;
 }
 .step-two {
-  background: url(images/background-2.png) no-repeat 50% 50%;
+  background: url(images/ecran4.png) no-repeat 50% 50%;
   background-color: #172B3F;
   background-size: cover;
 }
 .step-three {
-  background: url(images/background-3.png) no-repeat 50% 50%;
+  background: url(images/background-creation.png) no-repeat 50% 50%;
   background-color: #193E5A;
   background-size: cover;
 }
 .step-four {
-  background: url(images/background-4.png) no-repeat 50% 50%;
-  background-color: #264C68;
-  background-size: cover;
+  background: #cfcfcf url(images/crissxcross.png) ;
 }
 .step-five {
-  background: url(images/background-5.png) no-repeat 50% 50%;
+  background: url(images/ecran4.png) no-repeat 50% 50%;
   background-color: #497697;
   background-size: cover;
 }
@@ -252,7 +250,7 @@ section.step {
 }
 
 .step {
-  padding: 50px 0 250px;
+  padding: 350px 0 250px;
 }
 
 footer {
@@ -269,7 +267,7 @@ footer {
 }
   footer .illustration-city {
     padding-top: 50vh;
-    background: url(images/city.png) no-repeat 50% 100%;
+    background: white;
     min-height: 50vh;
   }
   footer .buttons {
@@ -546,7 +544,7 @@ pre.line-numbers > code {
 
 
   .step {
-    padding: 250px 0 150px
+    padding: 350px 0 150px
   }
 
   .instructions, pre {

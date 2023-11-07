@@ -37,6 +37,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
   <link href="http://fonts.googleapis.com/css?family=Lato:400,300italic,400bold" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/normalize.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
@@ -72,36 +75,24 @@
   </div>
 
 
-  <header data-midnight="black">
 
-    <div class="container">
-
-      <h1 class="wow fadeInUp">Midnight.js lets you switch fixed headers on the fly</h1>
-      <p class="wow fadeInUp">Scroll to try it out!</p>
-
-      <div class="scroll-prompt wow fadeInUp"></div>
-
-      <figure id="space-island">
-        <img class="wow fadeInUp" src="assets/css/images/space-island.jpg" />
-      </figure>
-    </div>
-
-  </header>
 
 
   <section class="step step-one" data-midnight="blue">
 
     <div class="container">
-      <div class="instructions wow fadeInLeft">
+
+      <!--div class="instructions wow fadeInLeft">
         <h2>The Header</h2>
         <p>Create your fixed nav (or header) as you typically would.</p>
         <p>You can use whatever markup suits you, just make sure the header works well with <em>position:fixed</em>.</p>
-      </div>
+      </div -->
 
-      <pre class="line-numbers wow fadeInRight"><code class="language-markup">&lt;!-- Your Fixed Nav --&gt;
-&lt;nav class="fixed"&gt;
-  &lt;a class="logo"&gt;Logo&lt;/a&gt;
-&lt;/nav&gt;</code></pre>
+      <div class="wow fadeInRight" style="position: relative" >
+        <div class="card-un" style="position: absolute;top:0;right:0">
+          <h1><div style="color:purple">1,3 millions</div>Il y a autant de magasins vestimentaires en Chine que de restaurants dans le monde</h1>
+        </div>
+      </div>
     </div>
 
   </section>
@@ -110,23 +101,12 @@
   <section class="step step-two" data-midnight="light">
 
     <div class="container">
-      <div class="instructions wow fadeInLeft">
-        <h2>The Sections</h2>
-        <p>After that, take any sections of your page that need a different nav and add <em>data-midnight="your-class"</em> to it, where <em>.your-class</em> is the class you are going to use to style that header.</p>
-        <p>If you don't use the property or just leave it blank, the <em>.default</em> class will be used for that section.</p>
+      <div class="wow fadeInUp"  >
+        <div class="card-un">
+          <h1><div style="color:purple">Mag2 distribution</div>vous apporte un nouveau canal de ventes innovant vers la Chine</h1>
+        </div>
       </div>
 
-      <pre class="line-numbers wow fadeInRight"><code class="language-markup">&lt;section data-midnight="white"&gt;
-  &lt;h1&gt;Use a white nav here&lt;/h1&gt;
-&lt;/section&gt;
-
-&lt;div data-midnight="blue"&gt;
-  &lt;h1&gt;And a blue nav here&lt;/h1&gt;
-&lt;/div&gt;
-
-&lt;footer&gt;
-  &lt;h1&gt;This will just use the default header&lt;/h1&gt;
-&lt;/footer&gt;</code></pre>
     </div>
 
   </section>
@@ -185,32 +165,7 @@
         <p>For instance the "butterflies" section will use the .midnightHeader.butterflies header, and any other ones will just use the markup from .midnightHeader.default.</p>
       </div>
       <div style="position: relative" class="wow fadeInRight">
-        <form>
-          <div class="input-container">
-              <label for="txtName" >Name</label>
-              <div class="input-group">
-                  <input id="txtName" type="text"  name="txtName"/>
-                  <img src="/assets/css/duotone/Communication/Chat-check.svg" aria-hidden="true" />
-              </div>
-          </div>
-          <div class="input-container">
-            <label for="txtEmail" >Email</label>
-              <div class="input-group">
-            <input id="txtEmail" type="email" name="txtEmail"/>
-              <img src="/assets/css/duotone/Communication/Mail-at.svg" aria-hidden="true" />
-              </div>
-          </div>
-          <div class="input-container">
-            <label for="txtMessage" >Message</label>
-              <div class="input-group">
-              <textarea id="txtMessage"  name="txtMessage" rows="4"></textarea>
-              </div>
-          </div>
-          <div style="margin-top: 10px;text-align: end">
-            <div class="g-recaptcha me-2" data-sitekey="6LerzhobAAAAABx9MZdPJBSvk5TsLocVFFQSD2mC"></div>
-            <button>Envoyer</button>
-          </div>
-        </form>
+
       </div>
 
     </div>
@@ -222,20 +177,40 @@
   <footer class="footer" data-midnight="full">
 
 
-    <div class="illustration-city">
+
 
       <div class="container">
-        <div class="buttons wow fadeIn">
-          <a class="button" href="https://aerolab.github.io/midnight.js/midnight.jquery.min.js" download>Download</a>
-          <a class="button" href="https://github.com/Aerolab/midnight.js" target="_blank"><i class="icon-github"></i> Fork on GitHub</a>
+        <div class="wow fadeIn" style="position:relative;">
+          <form>
+            <div class="input-container">
+              <label for="txtName" >Name</label>
+              <div class="input-group">
+                <input id="txtName" type="text"  name="txtName"  autocomplete="false" />
+                <img src="/assets/css/duotone/Communication/Chat-check.svg" aria-hidden="true" />
+              </div>
+            </div>
+            <div class="input-container">
+              <label for="txtEmail" >Email</label>
+              <div class="input-group">
+                <input id="txtEmail" type="email" name="txtEmail" autocomplete="false" />
+                <img src="/assets/css/duotone/Communication/Mail-at.svg" aria-hidden="true" />
+              </div>
+            </div>
+            <div class="input-container">
+              <label for="txtMessage" >Message</label>
+              <div class="input-group">
+                <textarea id="txtMessage"  name="txtMessage" rows="4" autocomplete="false" ></textarea>
+              </div>
+            </div>
+            <div style="margin-top: 10px;text-align: end">
+              <div class="g-recaptcha me-2" data-sitekey="6LerzhobAAAAABx9MZdPJBSvk5TsLocVFFQSD2mC"></div>
+              <button>Envoyer</button>
+            </div>
+          </form>
         </div>
       </div>
 
-      <div class="signature">
-        <a href="http://aerolab.co" target="_blank" class="signature-aerolab"><span class="screenreader">by Aerolab</span></a>
-      </div>
 
-    </div>
 
   </footer>
 
