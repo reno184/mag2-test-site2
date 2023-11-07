@@ -184,27 +184,32 @@
         <p>You just need to add a div with the class <em>.midnightHeader.default</em> inside your header, as well as any other custom headers you want.</p>
         <p>For instance the "butterflies" section will use the .midnightHeader.butterflies header, and any other ones will just use the markup from .midnightHeader.default.</p>
       </div>
-      <div class="card wow fadeInRight">
-        <form class="card-body">
+      <div style="position: relative" class="wow fadeInRight">
+        <form>
           <div class="input-container">
-            <label for="txtName" class="form-label text-muted mb-0 mt-3">Name</label>
-            <input id="txtName" type="text" class="input-group" name="txtName"/>
-            <img src="/assets/css/duotone/Communication/Mail-at.svg" aria-hidden="true" >
+              <label for="txtName" >Name</label>
+              <div class="input-group">
+                  <input id="txtName" type="text"  name="txtName"/>
+                  <img src="/assets/css/duotone/Communication/Chat-check.svg" aria-hidden="true" />
+              </div>
           </div>
           <div class="input-container">
-            <label for="txtEmail" class="form-label text-muted mb-0 mt-3">Email</label>
-            <input id="txtEmail" type="email" class="input-group" name="txtEmail"/>
-            <img src="" aria-hidden="true" >
+            <label for="txtEmail" >Email</label>
+              <div class="input-group">
+            <input id="txtEmail" type="email" name="txtEmail"/>
+              <img src="/assets/css/duotone/Communication/Mail-at.svg" aria-hidden="true" />
+              </div>
           </div>
           <div class="input-container">
-            <label for="txtMessage" class="form-label text-muted  mb-0 mt-3">Message</label>
-            <textarea id="txtMessage" class="input-group" name="txtMessage" rows="4"></textarea>
-            <img src="" aria-hidden="true" >
+            <label for="txtMessage" >Message</label>
+              <div class="input-group">
+              <textarea id="txtMessage"  name="txtMessage" rows="4"></textarea>
+              </div>
           </div>
-          <footer class="text-end mt-4 d-flex align-items-center justify-content-end">
+          <div style="margin-top: 10px;text-align: end">
             <div class="g-recaptcha me-2" data-sitekey="6LerzhobAAAAABx9MZdPJBSvk5TsLocVFFQSD2mC"></div>
-            <input type="submit" class="btn btn-primary "/>
-          </footer>
+            <button>Envoyer</button>
+          </div>
         </form>
       </div>
 
