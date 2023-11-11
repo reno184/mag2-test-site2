@@ -1,309 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-
-  <title>Midnight.js - Switch fixed headers on the fly</title>
-
-  <meta name="description" content="Midnight.js is a jQuery plugin that lets you subtly change your headers to make them match the content as you scroll." />
-  <meta name="keywords" content="js, jquery, scroll, plugin, animation" />
-  <meta name="robots" content="INDEX, FOLLOW" />
-  <meta name="author" content="Aerolab" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
-
-  <!-- Facebook Stuff -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Midnight.js" />
-  <meta property="og:title" content="Midnight.js - Switch fixed headers on the fly" />
-  <meta property="og:description" content="Midnight.js is a jQuery plugin that lets you subtly change your headers to make them match the content as you scroll." />
-  <meta property="og:image" content="http://aerolab.github.io/midnight.js/assets/images/midnight-facebook.png" />
-  <meta property="og:url" content="http://aerolab.github.io/midnight.js" />
-  <meta property="fb:app_id" content="344819049029949" />
-
-  <!-- Twitter Stuff -->
-  <meta property="twitter:card" content="summary" />
-  <meta property="twitter:site" content="@aerolab" />
-  <meta property="twitter:title" content="Midnight.js - Switch fixed headers on the fly" />
-  <meta property="twitter:description" content="Midnight.js is a jQuery plugin that lets you subtly change your headers to make them match the content as you scroll." />
-  <meta property="twitter:image" content="http://aerolab.github.io/midnight.js/assets/images/midnight-twitter.png" />
-  <meta property="twitter:url" content="http://aerolab.github.io/midnight.js" />
-
-  <link rel="icon" href="assets/images/favicon.ico" type="image/icon" />
-  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
-
-  <meta name="X-UA-Compatible" content="IE=edge" />
-  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-
-  <link href="http://fonts.googleapis.com/css?family=Lato:400,300italic,400bold" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/normalize.css" />
-  <link rel="stylesheet" href="assets/css/animate.css" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="stylesheet" href="assets/css/form.css" />
-  <style>
-    form:invalid button[type="submit"] {
-      opacity: 0.5;
-      cursor: default;
-    }
-  </style>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <meta charset="utf-8"/>
+    <title>Midnight.js - Switch fixed headers on the fly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+    <link rel="stylesheet" href="assets/css/grid.css"/>
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/form.css"/>
 </head>
 <body>
-
-  <!-- Our super awesome changing header! -->
-  <nav class="fixed">
+<nav class="fixed" style="z-index: 1">
     <div class="midnightHeader default">
-      <div class="logo-holder">
-        <a class="logo"><span class="screenreader"></span></a>
-      </div>
+        <div class="logo-holder"><a class="logo"></a></div>
     </div>
-  </nav>
+</nav>
 
-
-  <div class="top-links" data-midnight="white">
-    <a class="button" href="https://aerolab.github.io/midnight.js/midnight.jquery.min.js" download>Download</a>
-    <a class="button button-github" href="https://github.com/Aerolab/midnight.js" target="_blank">Fork on GitHub</a>
-  </div>
-
-
-  <div class="first-background" data-midnight="white">
-    <!-- Hi! -->
-  </div>
-
-
-
-
-
-  <section class="step step-one" data-midnight="blue">
-
-    <div class="container">
-
-      <!--div class="instructions wow fadeInLeft">
-        <h2>The Header</h2>
-        <p>Create your fixed nav (or header) as you typically would.</p>
-        <p>You can use whatever markup suits you, just make sure the header works well with <em>position:fixed</em>.</p>
-      </div -->
-
-      <div class="wow fadeInRight" style="position: relative" >
-        <div class="card-un" style="position: absolute;top:0;right:0">
-          <h1><div style="color:purple">1,3 millions</div>Il y a autant de magasins vestimentaires en Chine que de restaurants dans le monde</h1>
+<div style="height: 100px; background: #eee; color:white" data-midnight="white"></div>
+<div class="step step-one" data-midnight="dark" style="height: 720px">
+    <div class="row" style="padding-top: 50px">
+        <div class="col-12 offset-md-4 col-md-8 col-md-3">
+            <section class="wow fadeInRight" data-wow-duration="2s">
+                <span style="color:purple; font-weight: bold">1.2 million</span> de magasins mode et vêtements indépendants en Chine
+            </section>
+            <section class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s" >
+                Ils sont <span style="color:purple">micro-indépendants</span> et présent <span style="color:purple">partout</span> en Chine.
+            </section>
+            <section class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="1.5s" >
+                Ils aiment le savoir faire <span style="color:purple">Français</span>, et souhaitent en proposer à leurs clients
+            </section>
         </div>
-      </div>
     </div>
-
-  </section>
-
-
-  <section class="step step-two" data-midnight="light">
-
-    <div class="container">
-      <div class="wow fadeInUp"  >
-        <div class="card-un">
-          <h1><div style="color:purple">Mag2 distribution</div>vous apporte un nouveau canal de ventes innovant vers la Chine</h1>
+</div>
+<div class="step step-two" data-midnight="lighter" style="height: 850px">
+    <div class="row" style="padding-top: 100px">
+        <div class="col-12">
+            <section class="wow fadeInLeft" data-wow-duration="2s"  >
+                Face aux difficultés de la <span style="color:rgba(180,15,139,0.8)">fast fashion</span> et du marché croissant de la <span style="color:rgba(117,28,95,0.8)">seconde main...</span>Les marques Françaises n'auraient-elles pas une apportunitée à saisir ?</span>
+            </section>
+            <section class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".5s" >
+                Qui de mieux placé que Mike...pour témoigner de la <span style="color:purple">solution Mag2</span> !
+            </section>
         </div>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <section class="step step-three" data-midnight="dark">
-
-    <div class="container">
-      <div class="instructions wow fadeInLeft">
-        <h2>Styling your headers</h2>
-        <p>You can style it in your css using the class <em>.midnightHeader.your-class</em>.</p>
-        <p>Use whatever CSS or markup you like for each one. They will be switched automatically when necessary.</p>
-      </div>
-
-      <pre class="line-numbers wow fadeInRight"><code class="language-css">.midnightHeader.default {
-  background: none;
-  color: black;
-}
-.midnightHeader.white {
-  background: white;
-  color: black;
-}
-.midnightHeader.blue {
-  background: blue;
-  color: white;
-}</code></pre>
-    </div>
-
-  </section>
-
-
-
-  <section class="step step-four" data-midnight="lighter">
-
-    <div class="container">
-      <div class="instructions wow fadeInLeft">
-        <h2>Mike & Mag 2</h2>
-        <p>To make everything work, just load midnight (and jQuery) and initialize it. We take care of the rest.</p>
-      </div>
-
-      <iframe width="100%" class="wow fadeInRight" style="aspect-ratio: 2 / 1;" src="https://youtube.com/embed/5_ck1K-BAmQ?si=-qLar-6Mic-FCTGM" frameborder="0"></iframe>
-
-    </div>
-
-  </section>
-
-
-  <section class="step step-five full-height" data-midnight="white">
-
-    <div class="container">
-
-      <div class="instructions wow fadeInLeft">
-        <h2>Further customization</h2>
-        <p>Want to use custom markup for each header?</p>
-        <p>You just need to add a div with the class <em>.midnightHeader.default</em> inside your header, as well as any other custom headers you want.</p>
-        <p>For instance the "butterflies" section will use the .midnightHeader.butterflies header, and any other ones will just use the markup from .midnightHeader.default.</p>
-      </div>
-      <div style="position: relative" class="wow fadeInRight">
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <footer class="footer" data-midnight="full">
-
-
-
-
-      <div class="container">
-        <div class="wow fadeIn" style="position:relative;">
-          <form>
-            <div class="input-container">
-              <label for="txtName" >Name</label>
-              <div class="input-group">
-                <input id="txtName" type="text"  name="txtName"  autocomplete="false" />
-                <img src="/assets/css/duotone/Communication/Chat-check.svg" aria-hidden="true" />
-              </div>
-            </div>
-            <div class="input-container">
-              <label for="txtEmail" >Email</label>
-              <div class="input-group">
-                <input id="txtEmail" type="email" name="txtEmail" autocomplete="false" />
-                <img src="/assets/css/duotone/Communication/Mail-at.svg" aria-hidden="true" />
-              </div>
-            </div>
-            <div class="input-container">
-              <label for="txtMessage" >Message</label>
-              <div class="input-group">
-                <textarea id="txtMessage"  name="txtMessage" rows="4" autocomplete="false" ></textarea>
-              </div>
-            </div>
-            <div style="margin-top: 10px;text-align: end">
-              <div class="g-recaptcha me-2" data-sitekey="6LerzhobAAAAABx9MZdPJBSvk5TsLocVFFQSD2mC"></div>
-              <button>Envoyer</button>
-            </div>
-          </form>
+        <div class="offset-1 col-11 offset-md-3 col-md-6" >
+            <iframe class="wow fadeInLeft" data-wow-duration="2s"  style="width: 100%;aspect-ratio: 16 / 9;border-radius: 10px" src="https://youtube.com/embed/5_ck1K-BAmQ?si=-qLar-6Mic-FCTGM"></iframe>
         </div>
-      </div>
+    </div>
+</div>
+<div class="step step-three" data-midnight="blue" style="height: 800px">
+    <div class="row" style="padding-top: 200px" >
+        <div class="col-md-8 col-md-3">
+            <section class="wow fadeInLeft" data-wow-duration="2s" ><span style="color:purple">Mag2 distribution</span> est une start-up Franco-Chinoise basée à <b>Grenoble</b> et à <b>Dalian</b> en Chine</section>
+            <section class="wow fadeInLeft" data-wow-duration="2s" >Nous avons pour mission d'aider les marques Française à gagner des parts de marché en Chine.</section>
+            <p class="wow fadeInLeft" data-wow-duration="2s" style="margin:20px;font-size: 150%; display: flex; align-items: center" >
+                <img src="/assets/css/images/hong_yu.png" alt="fondatrice" style="width: 100px; height: 100px; border: solid 2px #fff;margin-right:5px;box-shadow: 1px 1px 1px rgba(0,0,0,.5);border-radius: 50%;" />
+                <span><span style="color: rebeccapurple">Hong Yu</span>: Franco-Choise, fondatrice de Mag2-Distribution, spécialiste commerce et logistique.</span>
+            </p>
+            <p class="wow fadeInLeft" data-wow-duration="2s" style="margin:20px;font-size: 150%; display: flex; align-items: center" >
+                <img src="/assets/css/images/jeanmarc-hedde.jpeg" alt="co-fondateur" style="width: 100px; height: 100px; border: solid 2px #fff;margin-right:5px;box-shadow: 1px 1px 1px rgba(0,0,0,.5);border-radius: 50%;" />
+                <span><span style="color: rebeccapurple">Jean-Marc Hedde</span>: Responsable développement Shopman & Creation</span>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="step step-four" data-midnight="black" style="height: 800px">
+    <div class="row" >
+        <div class="col-12 text-center">
+            <div class="card wow fadeInLeft" data-wow-duration="2s" >
+                <section><span style="color:purple">Mag2</span> propose <span style="color:yellow;text-shadow: 1px 1px 1px rgba(0,0,0,.9)">Creation</span> pour les marques Françaises, une solution d'échanges commerciaux avec la <span style="color:purple">Chine</span></section>
+            </div>
+        </div>
+</div>
+</div>
+    <div class="step step-five" data-midnight="light" style="height:800px">
+        <div class="row"  >
+            <div class="col-12 text-center">
+                <div class="card wow fadeInLeft" data-wow-duration="2s" >
+                    <section><span style="color:purple">Mag2</span> commercialise <span style="color:purple; font-weight: bold;text-shadow: 1px 1px 1px rgba(0,0,0,.9)">Shopman</span> en Chine une solution ERP directement connectée à <span style="color:yellow; text-shadow: 1px 1px 1px rgba(0,0,0,.9)">Creation</span> France</section>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="step  step-six" data-midnight="blue" style="height:1100px">
+    <div class="row" style="padding-top: 100px">
+        <div class="col-12  offset-md-4 col-md-8">
+            <div class="wow bounceInright" data-wow-duration="2s">
+                <section>
+                    <h3>Mag2-distribution <span style="color:purple">Grenoble (fr)</span></h3>
+                    <adress>17 Rue Buffon, Grenoble 38000, France</adress>
+                </section>
+
+                <section>
+                    <h3>Mag2-distribution <span style="color:yellow">Dalian (cn)</span></h3>
+                    <adress>19-5-2 Fangmingyuan, Dalian, Liaoning,China</adress>
+                </section>
+
+            </div>
+        </div>
+        <div class="col-12 offset-md-4 col-md-8">
+            <div class="wow bounceInRight" data-wow-duration="2s">
+                <section>Contact <span style="color:purple; font-weight: bold">Hong Yu</span> fondatrice Mag2-Distribution</section>
+                <form>
+                    <div class="input-container">
+                        <label for="txtName">Votre nom</label>
+                        <div class="input-group">
+                            <input id="txtName" type="text" name="txtName" autocomplete="false"/>
+                            <img style="background: rgba(152,98,140,0.8)" src="/assets/css/duotone/Communication/Chat-check.svg" aria-hidden="true" alt="svg-username"/>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtCompany">Votre société</label>
+                        <div class="input-group">
+                            <input id="txtCompany" type="text"  autocomplete="false"/>
+                            <img style="background: rgba(152,98,140,0.8)" src="/assets/css/duotone/Shopping/Box2.svg" aria-hidden="true" alt="svg-username"/>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtEmail">Votre email</label>
+                        <div class="input-group">
+                            <input id="txtEmail" type="email" name="txtEmail" autocomplete="false"/>
+                            <img style="background: plum;" src="/assets/css/duotone/Communication/Mail-at.svg" aria-hidden="true" alt="svg-mail"/>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtMessage">Votre message</label>
+                        <div class="input-group">
+                            <textarea id="txtMessage" name="txtMessage" rows="4" autocomplete="false"></textarea>
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;text-align: end">
+                        <div class="g-recaptcha me-2" data-sitekey="6LerzhobAAAAABx9MZdPJBSvk5TsLocVFFQSD2mC"></div>
+                        <button>Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 
-
-  </footer>
-
-
-  <script src="assets/js/jquery-1.11.1.min.js"></script>
-  <script src="assets/js/sscr.min.js"></script>
-  <script src="assets/js/prism.js"></script>
-  <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/viewport-units-buggyfill.js"></script>
-  <script src="midnight.jquery.min.js"></script>
-  <script>
-    document.querySelector('form').addEventListener('submit', function (e) {
-      e.preventDefault()
-      const form = e.target
-      fetch('https://obscure-headland-74730.herokuapp.com/api/recaptcha', {
-                method: 'POST', headers: {
-                  'Content-Type': 'application/json',
-                  'g-recaptcha-response': grecaptcha.getResponse()
-                }, body: JSON.stringify({
-                  name: form.txtName.value,
-                  email: form.txtEmail.value,
-                  message: form.txtMessage.value,
-                })
-              }
-      ).then(function (rep) {
-        console.log(rep.ok)
-      }).catch(err => {
-        console.error(err.message)
-      });
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/js/midnight.jquery.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+    $(document).ready(function () {
+        $('nav.fixed').midnight();
+        new WOW({mobile: false}).init();
     })
-
-
-
-    $(document).ready(function(){
-      // vh fix for iOS7 (Not that it works well on that anyway)
-      viewportUnitsBuggyfill.init();
-
-      $(window).resize(function(){
-        viewportUnitsBuggyfill.refresh();
-      });
-
-      // Start Midnight!
-      $('nav.fixed').midnight();
-
-      // Start wow.js
-      new WOW().init();
-
-      // The island disappears when the logo moves on top of it
-      var $island = $('#space-island');
-      var islandTop = $island.offset().top;
-      var windowHeight = $(window).height();
-
-      $(window).resize(function(){
-        islandTop = $island.offset().top;
-        windowHeight = $(window).height();
-      });
-
-      $(document).scroll(function(){
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        var minScrollTop = islandTop - windowHeight * 0.4;
-        var maxScrollTop = islandTop;
-
-        // Opacity goes from 1.0 at the bottom 2/3 of the screen to 0.4 at the top
-        if( scrollTop <= islandTop*2 ) {
-          var targetOpacity = 1.0;
-          var minOpacity = 0.4;
-
-          if( scrollTop > minScrollTop && scrollTop < maxScrollTop ) {
-            targetOpacity = ((maxScrollTop - scrollTop) / (maxScrollTop - minScrollTop)) * (1.0 - minOpacity) + minOpacity;
-          }
-          else if( scrollTop > maxScrollTop ) {
-            targetOpacity = minOpacity;
-          }
-          else if( scrollTop < minScrollTop ) {
-            targetOpacity = 1.0;
-          }
-
-          $island.css('opacity', targetOpacity);
-        }
-
-      });
-
-      $('.scroll-prompt').click(function(event){
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: $("section.step-one").offset().top - $('nav').height() * 0.5
-        }, 1000, 'swing');
-      });
-
-      $(window).trigger('resize');
-
-    });
-  </script>
-
+</script>
 </body>
 </html>

@@ -1,29 +1,21 @@
 
 form {
-    z-index: 9999;
-    position: absolute;
-    top:100px;
-    right: 0;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    margin:  0 100px;
 }
 
-/*@media screen and (max-width:900px){
-    form{
-        margin: 100px auto 0;
-    }
-}*/
+.input-container{
+    margin-top: 20px;
+}
 
 .input-container label{
-    color:#999999;
+    color: rgba(117, 28, 95, 0.8);
     font-size: 15px;
     display: block;
     margin-bottom: 0;
 }
 
 .input-container img {
-    background: #eee;
+    background: rgba(255, 215, 245, 0.8);
     width:43px;
     height:43px;
     border-top-right-radius: 10px;
@@ -35,35 +27,38 @@ form {
 }
 
 .input-group input{
-    height: 25px;
+    height: 43px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 .input-group textarea, .input-group input{
     padding: 8px;
+    resize: none;
+
     font-size: 15px;
     flex-basis: 100%;
     min-width: 200px;
-    border: 1px solid #eee;
+    border: 1px solid rgba(152, 98, 140, 0.8);
+
+}
+
+.input-group textarea{
+    border-radius: 10px;
     outline: none;
 }
 
 form button{
-    padding: 5px 35px;
+    padding: 10px 35px;
     font-size: 14px;
     margin-top: 25px;
-    background: #2196f3;
+    background: rgba(180, 15, 139, 0.8);
     color:white;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 6px;
     border: none;
 }
 
-.card-un{
-    font-family: Agbalumo ;
-    padding: 30px 50px;
-    text-align: center;
-    background: rgba(255,255,255,.6);
-    border: none;
-    border-radius: 10px;
+form:invalid button {
+    opacity: 0.5;
+    cursor: default;
 }
