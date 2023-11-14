@@ -122,6 +122,20 @@
                             <img style="background: plum;" src="/assets/css/duotone/Communication/Mail-at.svg" aria-hidden="true" alt="svg-mail"/>
                         </div>
                     </div>
+                    <!--    -->
+                    <div class="btn-group">
+                        <div class="btn-placeholder">Select</div>
+                        <div class="btn-group-prepend" id="menu-icon">show</div>
+                    </div>
+                  <!--  <div style="position:relative">
+                        <ul class="dropdown-menu">
+                            <li data-subject="A" class="dropdown-menu-item">Je souhaite être abonnée à votre new letters</li>
+                            <li data-subject="B" class="dropdown-menu-item">Je souhaite être abonnée à votre new letters</li>
+                            <li data-subject="C" class="dropdown-menu-item">Item 1</li>
+                            <li data-subject="D" class="dropdown-menu-item">Item 1</li>
+                        </ul>
+                    </div>-->
+                    <!--    -->
                     <div class="input-container">
                         <label for="txtMessage">Votre message</label>
                         <div class="input-group">
@@ -147,6 +161,12 @@
     $(document).ready(function () {
         $('nav.fixed').midnight();
         new WOW({mobile: false}).init();
+        $('#menu-icon, .dropdown-menu-item').click(function () {
+            $('.dropdown-menu').toggleClass('show');
+        });
+        $('.dropdown-menu-item').click(function (e) {
+            $('#subject').val(e.target.dataset.subject);
+        });
     })
 </script>
 </body>

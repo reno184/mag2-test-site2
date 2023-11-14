@@ -26,8 +26,8 @@ ul{
 }
 /* Nav & Midnight */
 
-.logo-holder {
-    margin-top: 0px;
+.logo-bw-holder {
+    margin-top: 0;
     z-index: 9999;
 }
 .row{
@@ -38,7 +38,7 @@ ul{
     width: 1200px;
     height: 100px;
     margin: 0 auto;
-    background: url(title-logo/logo-1200.png) no-repeat;
+    background: url(title-logo/logo-bw-1200.png) no-repeat;
 }
 section{
     margin: 30px;
@@ -56,9 +56,9 @@ section{
 @media(max-width: 575px) {
 
     .logo {
-        width: 300px;
+        width: 450px;
         height: 25px;
-        background-image: url(title-logo/logo-300.png);
+        background-image: url(title-logo/logo-bw-450.png);
     }
 }
 @media  (min-width: 576px) and (max-width: 768px) {
@@ -66,7 +66,7 @@ section{
     .logo {
         width: 600px;
         height: 50px;
-        background-image: url(title-logo/logo-600.png);
+        background-image: url(title-logo/logo-bw-600.png);
     }
 }
 @media (min-width: 769px) and (max-width: 992px) {
@@ -74,7 +74,7 @@ section{
     .logo {
         width: 800px;
         height: 67px;
-        background-image: url(title-logo/logo-800.png);
+        background-image: url(title-logo/logo-bw-800.png);
     }
 }
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -82,7 +82,7 @@ section{
     .logo {
         width: 900px;
         height: 75px;
-        background-image: url(title-logo/logo-900.png);
+        background-image: url(title-logo/logo-bw-900.png);
     }
 }
 
