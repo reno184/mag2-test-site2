@@ -5,129 +5,25 @@
     margin: 0;
     padding: 0;
 }
-
-.title{
-    font-size: 150%;
-    color : white;
-    text-shadow: 1px 1px 2px black;
-    font-family: 'Brush Script MT', cursive;
-}
 ul{
     list-style: none;
     padding-left: 10px;
 }
-.card{
-    background: rgba(255,255,255,.8);
-    padding: 20px;
-
-    box-shadow: 3px 3px 3px rgba(0,0,0,.3);
-    font-size: 150%;
-    line-height: 2em;
+.row {
+    min-height: 200px;
 }
-/* Nav & Midnight */
-
-.logo-bw-holder {
-    margin-top: 0;
-    z-index: 9999;
+/* custom */
+.nav-link.active{
+    font-weight: bold;
 }
-.row{
-    padding-top:0 ;
+.mag2 .btn-secondary{
+    background: #000;
+    color: #fff;
 }
-.logo {
-    display: block;
-    width: 1200px;
-    height: 100px;
-    margin: 0 auto;
-    background: url(title-logo/logo-bw-1200.png) no-repeat;
+.mag2 .big-title{
+    font-family: 'Bebas Neue', sans-serif;
 }
-section{
-    margin: 30px;
-    font-size: 200%;
-    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif
+.title-yellow{
+    color:#F4D509;
+    font-weight:bolder
 }
-@media (max-width: 992px) {
-    section{
-        font-size: 100%;
-        background: rgba(250,250,250,.6);
-        padding: 20px;
-        border-radius: 20px;
-    }
-}
-@media(max-width: 575px) {
-
-    .logo {
-        width: 450px;
-        height: 25px;
-        background-image: url(title-logo/logo-bw-450.png);
-    }
-}
-@media  (min-width: 576px) and (max-width: 768px) {
-
-    .logo {
-        width: 600px;
-        height: 50px;
-        background-image: url(title-logo/logo-bw-600.png);
-    }
-}
-@media (min-width: 769px) and (max-width: 992px) {
-
-    .logo {
-        width: 800px;
-        height: 67px;
-        background-image: url(title-logo/logo-bw-800.png);
-    }
-}
-@media (min-width: 993px) and (max-width: 1200px) {
-
-    .logo {
-        width: 900px;
-        height: 75px;
-        background-image: url(title-logo/logo-bw-900.png);
-    }
-}
-
-
-.midnightHeader.white .logo {
-    background-position: -0px 0;
-}
-.midnightHeader.default .logo,
-.midnightHeader.black .logo {
-    background-position: -0px 16.67%;
-}
-.midnightHeader.blue .logo {
-    background-position: -0px 33.33%;
-}
-.midnightHeader.light .logo {
-    background-position: -0px 50.00%;
-}
-.midnightHeader.dark .logo {
-    background-position: -0px 66.67%;
-}
-.midnightHeader.lighter .logo {
-    background-position: -0px 83.33%;
-}
-.midnightHeader.full .logo {
-    background-position: -0px 100%;
-}
-
-
-.step-one {
-    background:#ddd url(images/bande7.png)top left no-repeat;
-}
-.step-two {
-    background:#eee;
-}
-.step-three {
-    background:#ffff url(images/bande11.jpg) top right no-repeat;
-}
-.step-four {
-    background:#ccc url(images/creation1.jpg) bottom right no-repeat;
-}
-.step-five {
-    background:#ababab url(images/shopman1.jpg) bottom left no-repeat;
-}
-
-.step-six {
-    background:#fff url(images/bande4.jpg) bottom left no-repeat;
-}
-
