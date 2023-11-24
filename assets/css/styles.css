@@ -1,16 +1,7 @@
-*,
-::before,
-::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 ul{
     list-style: none;
-    padding-left: 10px;
-}
-.row {
-    min-height: 200px;
+    padding-left: 0px;
 }
 /* custom */
 .nav-link.active{
@@ -26,4 +17,93 @@ ul{
 .title-yellow{
     color:#F4D509;
     font-weight:bolder
+}
+/* Slide 4 */
+.slide4{
+    position: absolute;
+    left: 20px;
+}
+.slide4.title1{
+    color: #D9D9D9;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 300%;
+    font-weight: bolder;
+    top:0;
+}
+.slide4.title2{
+    color:#F4D509;
+    background: white;
+    font-weight:bolder;
+    top:40px;
+}
+.slide4.title3{
+    font-weight: bold;
+    top:70px
+}
+.slide4.content{
+    line-height: 1.5em;
+    font-size: 90%;
+    top:110px;
+}
+/* slide 5*/
+.slide5{
+    padding: 100px 0;
+    background:  #333;
+    color: #fff;
+}
+.slide5 .title1{
+    color: #F4D509;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+.slide5 .title2{
+    flex: 1;
+    font-size: 200%;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.slide5 .title3 a{
+    color: #FFF;
+    font-size: 90%;
+}
+.slide5 .title4{
+    font-size: 80%;
+}
+.slide5 li{
+    line-height: 2em;
+}
+.slide5 i{
+    margin-right: 10px;
+}
+.slide5 ul.creation  li.active i{
+    color: #F4D509;
+}
+
+.slide5 ul.shopman li.active i{
+    color: #AA7FF5;
+}
+
+.slide5 button{
+    border: none;
+    color:#fff;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+.slide5 button.download{
+    background: #D8D8D8;
+    font-size: 90%;
+    padding: 10px 50px;
+    color:#fff;
+}
+.slide5 button.store{
+    background: #18181B;
+    padding: 10px 20px ;
+    color:#fff;
+}
+.slide5 .video{
+    border-radius: 20px;
+    width:80%;
+    height: 80%;
+    background: #777;
 }
