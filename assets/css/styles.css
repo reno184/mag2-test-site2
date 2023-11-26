@@ -13,7 +13,9 @@
     background: #333;
     color: #fff;
 }
-
+.grecaptcha-badge{
+    display: none;
+}
 /* slide 1 */
 
 .slide1 h1{
