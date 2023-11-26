@@ -1,14 +1,16 @@
-
-ul{
+.mag2 a{
+    text-decoration: none;
+}
+.mag2 ul{
     list-style: none;
-    padding-left: 0px;
+    padding-left: 0;
 }
 /* custom */
 .nav-link.active{
     font-weight: bold;
 }
 .mag2 .btn-secondary{
-    background: #000;
+    background: #333;
     color: #fff;
 }
 .mag2 .big-title{
@@ -20,30 +22,42 @@ ul{
 }
 /* Slide 4 */
 .slide4{
+
+}
+.slide4 .title1{
     position: absolute;
     left: 20px;
-}
-.slide4.title1{
     color: #D9D9D9;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 300%;
     font-weight: bolder;
     top:0;
 }
-.slide4.title2{
+.slide4 .title2{
+    position: absolute;
+    left: 20px;
     color:#F4D509;
     background: white;
     font-weight:bolder;
     top:40px;
 }
-.slide4.title3{
+.slide4 .title3{
+    position: absolute;
+    left: 20px;
     font-weight: bold;
     top:70px
 }
-.slide4.content{
+.slide4 .content{
+    position: absolute;
+    left: 20px;
     line-height: 1.5em;
     font-size: 90%;
     top:110px;
+}
+
+.slide4 .card-active{
+    border-radius: 25px;
+    background: rgba(244, 213, 9, 0.20);
 }
 /* slide 5*/
 .slide5{
@@ -106,4 +120,163 @@ ul{
     width:80%;
     height: 80%;
     background: #777;
+}
+.slide5 .video{
+    border-radius: 25px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    width: 100%;
+}
+/* slide 6 */
+
+.slide6 .title{
+    color: #333;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 300%;
+    font-weight: bolder;
+}
+.slide6 a i {
+    color: #333;
+}
+.slide6 .fa-circle{
+    color: #F4D509
+}
+.slide6 hr {
+    margin: 7px 0 0 5px;
+    border-top: solid 2px #F4D509;
+    border-bottom: solid 2px #F4D509;
+}
+
+
+
+/* slide 7 */
+
+.slide7 .title{
+    color: #333;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 300%;
+    font-weight: bolder;
+}
+.slide7 div > span:first-child{
+    font-size: 250%;
+    font-weight: bolder;
+    color:#ccc;
+    vertical-align: baseline;
+}
+.slide7 div > span + span{
+    font-weight: bolder;
+    color:#F4D509;
+}
+.slide7 .title1{
+    font-weight: bold;
+    font-size: 150%;
+}
+.slide7 p{
+    color:#aaa;
+}
+.slide7 a {
+    color:#ccc;
+}
+/* slide 8  */
+.slide8{
+    height: 500px;
+    overflow: hidden;
+}
+.slide8 .content{
+    position: absolute;
+    top: 0;
+    left:40px;
+    z-index: 1;
+}
+.slide8 .title{
+    color: #333;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 300%;
+    font-weight: bolder;
+}
+.slide8 svg{
+    position: absolute;
+    top:0;
+    right: 100px;
+    fill:  #F4D509;;
+}
+.slide8 .image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+.slide8 .col-4 p{
+    margin: 5px 0;
+    font-size: 120%;
+    font-weight: bold;
+}
+.slide8 .col-4 a{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.slide9{
+    background: #333;
+}
+.slide9 .content{
+    border-radius: 50px;
+    height: 400px;
+    margin:50px;
+    width: 100%;
+    background: #FFC947;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slide9 .content div{
+    color: #333;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 300%;
+    font-weight: bolder;
+}
+.slide9 .content button{
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #333;
+    padding: 10px 20px ;
+    color:#fff;
+}
+.slide10 .col-4{
+    background: #333;
+    color: white
+}
+
+.slide10 input{
+    background: #444;
+    padding: 3px;
+    color: #FFC947;
+    border: solid 1px #444;
+    border-radius: 5px;
+    outline: none;
+}
+.slide10 input:focus{
+    outline: none;
+}
+.slide10 button{
+    border: none;
+    border-radius: 3px;
+    background: #FFC947;
+    padding: 3px 20px ;
+    color:#333;
+}
+.slide11{
+    padding: 30px;
+    background: #333;
+    color:white;
+}
+.slide11 a{
+    color: white;
+}
+.slide11 .separator{
+    border-top: solid 1px white;
+    padding-bottom: 20px;
 }
