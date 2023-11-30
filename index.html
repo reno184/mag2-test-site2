@@ -21,7 +21,7 @@
     <!------------------------------------- NAV SECTION ----------------------------------------------------->
     <div class="navigation-section">
         <div class="row">
-            <nav class="offset-1 col-10 py-0 navbar navbar-expand-lg">
+            <nav id="mag2Nav" class="offset-1 col-10 py-0 navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#"><img src="assets/logo/logo_black_letter.png" alt="logo" style="width: 60px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,187 +29,185 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav  me-auto">
                         <li class="nav-item">
-                            <a class="nav-link agContentText active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link agContentText active" aria-current="page" href="#scrollspyHome" title="goto to home section">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link agContentText" href="#">About</a>
+                            <a class="nav-link agContentText" href="#scrollspyAbout" title="goto to about us section">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link agContentText" href="#">Products</a>
+                            <a class="nav-link agContentText" href="#scrollspyProduct" title="goto to product section">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link agContentText" href="#">Contact</a>
+                            <a class="nav-link agContentText" href="#scrollspyContact" title="goto to contact section">Contact</a>
                         </li>
                     </ul>
-                    <!--   <form class="d-flex" role="search">
-                           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
-                    <button class="btn btn-secondary btnMenuTop">Waiting list</button>
-                    <!--  </form>-->
+                    <a href="#scrollspyContact" title="goto contact form" class="btn btn-secondary btnMenuTop">Waiting list</a>
                 </div>
             </nav>
             <div class="col-1"></div>
         </div>
     </div>
-    <!------------------------------------- INTRO SECTION ----------------------------------------------------->
-    <div class="intro-section">
-        <!--  <img src="/assets/images/Ellipse%2025.png" style="position: absolute;top:175px;left:-70px">-->
-        <div class="row">
-            <div class="offset-1 col-7">
-                <div class="slogan" style="margin-top: -27px">Connection <span class="colorGrey">between french fashion brands</span>
-                    & asian distributors
-                </div>
-            </div>
-            <div class="col-3">
-                <div style="margin-right: 100px" class="text-end agContentText">Discover the joy of effortless
-                    international sales
-                </div>
-            </div>
-            <div class="col-1"></div>
-        </div>
-        <div class="row">
-            <div class="offset-1 col-11 pe-0">
-                <div class="position-relative">
-                    <div style="position: absolute;top:10px;left:20px">
-                        <img src="assets/logo/logo_white.png" alt="logo" style=" width: 70px;vertical-align: center;">
-                        <span class="agContentText colorWhite">The tiny puzzle that links you to vast market</span>
+    <div data-bs-spy="scroll" data-bs-target="#mag2Nav" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+        <!------------------------------------- INTRO SECTION ----------------------------------------------------->
+        <div id="scrollspyHome" class="intro-section">
+            <!--  <img src="/assets/images/Ellipse%2025.png" style="position: absolute;top:175px;left:-70px">-->
+            <div class="row">
+                <div class="offset-1 col-7">
+                    <div class="slogan" style="margin-top: -27px">Connection <span class="colorGrey">between french fashion brands</span>
+                        & asian distributors
                     </div>
-                    <a href="#" style="" class="ab-center-center colorWhite"><i class="fa-duotone fa-circle-play fa-3x"></i></a>
-                    <img src="assets/images/bg-video.png" alt="video" style="width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-3">
+                    <div style="margin-right: 100px" class="text-end agContentText">Discover the joy of effortless
+                        international sales
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="offset-1 col-11 pe-0">
+                    <div class="position-relative">
+                        <div style="position: absolute;top:10px;left:20px">
+                            <img src="assets/logo/logo_white.png" alt="logo" style=" width: 70px;vertical-align: center;">
+                            <span class="agContentText colorWhite">The tiny puzzle that links you to vast market</span>
+                        </div>
+                        <a href="#" style="" class="ab-center-center colorWhite"><i class="fa-duotone fa-circle-play fa-3x"></i></a>
+                        <img src="assets/images/bg-video.png" alt="video" style="width: 100%; object-fit: cover;">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!------------------------------------- ABOUT US SECTION ----------------------------------------------------->
-    <div class="aboutUs-section">
-        <div class="row">
-            <div class="offset-1 col-2">
-                <div class="agText text-uppercase colorYellow">About Us</div>
-            </div>
-            <div class="col-8 d-flex flex-column align-items-end">
-                <div style="width:879px;" class=" text-end agTitle2">Mag² offers innovative B2B solutions to empower you
-                    connect with over 1 millions Asian fashion stores .
+        <!------------------------------------- ABOUT US SECTION ----------------------------------------------------->
+        <div id="scrollspyAbout" class="aboutUs-section">
+            <div class="row">
+                <div class="offset-1 col-2">
+                    <div class="agText text-uppercase colorYellow">About Us</div>
                 </div>
-                <div class="agContentText">The missing piece redefining your global business landscapes.</div>
+                <div class="col-8 d-flex flex-column align-items-end">
+                    <div style="width:879px;" class=" text-end agTitle2">Mag² offers innovative B2B solutions to empower you
+                        connect with over 1 millions Asian fashion stores .
+                    </div>
+                    <div class="agContentText">The missing piece redefining your global business landscapes.</div>
+                </div>
+                <div class="col-1"></div>
             </div>
-            <div class="col-1"></div>
-        </div>
-        <div class="row">
-            <div class="offset-1 col-10">
-                <div class="row">
-                    <div class="col-3 text-center">
-                        <div style="width:208px;height:304px; margin: 0 auto" class="text-start p-2">
-                            <div class="step" style="height: 34px; overflow: hidden">O1</div>
-                            <div class="agHeader2 text-uppercase colorYellow">Difference</div>
-                            <div class="agHeader2">No investment</div>
-                            <div class="agDescriptionText colorGreyLight">Conquering the largest market may seem
-                                tempting, but it
-                                can also be excessively costly.
-                                We helps you boost sales with just pocket change.
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <div class="row">
+                        <div class="col-3 text-center">
+                            <div style="width:208px;height:304px; margin: 0 auto" class="text-start p-2">
+                                <div class="step" style="height: 34px; overflow: hidden">O1</div>
+                                <div class="agHeader2 text-uppercase colorYellow">Difference</div>
+                                <div class="agHeader2">No investment</div>
+                                <div class="agDescriptionText colorGreyLight">Conquering the largest market may seem
+                                    tempting, but it
+                                    can also be excessively costly.
+                                    We helps you boost sales with just pocket change.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <div style="width:208px;height:304px; margin: 0 auto" class="text-start p-2">
+                                <div class="step" style="height: 34px; overflow: hidden">O2</div>
+                                <div class="agHeader2 text-uppercase colorYellow">Difference</div>
+                                <div class="agHeader2">No prospect</div>
+                                <div class="agDescriptionText colorGreyLight">We take charge of finding prospects for your
+                                    products
+                                    while you channel your energy
+                                    into showcasing your amazing design skills.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <div style="width:208px;height:304px; margin: 0 auto" class="text-start p-2">
+                                <div class="step" style="height: 34px; overflow: hidden">O3</div>
+                                <div class="agHeader2 text-uppercase colorYellow">Difference</div>
+                                <div class="agHeader2">No export</div>
+                                <div class="agDescriptionText colorGreyLight">You've been producing in Asia for many years?
+                                    It's time to
+                                    venture into the local
+                                    market.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3  text-center">
+                            <div style="width:208px;height:304px; margin: 0 auto" class="text-start card-active p-2">
+                                <div class="step" style="height: 34px; overflow: hidden">O4</div>
+                                <div class="agHeader2 text-uppercase colorYellow">Difference</div>
+                                <div class="agHeader2">Eco-responsible</div>
+                                <div class="agDescriptionText colorGreyLight">Mag2 is the only fashion solution seamlessly
+                                    integrates
+                                    eco-responsible
+                                    functions.
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3 text-center">
-                        <div style="width:208px;height:304px; margin: 0 auto" class="text-start p-2">
-                            <div class="step" style="height: 34px; overflow: hidden">O2</div>
-                            <div class="agHeader2 text-uppercase colorYellow">Difference</div>
-                            <div class="agHeader2">No prospect</div>
-                            <div class="agDescriptionText colorGreyLight">We take charge of finding prospects for your
-                                products
-                                while you channel your energy
-                                into showcasing your amazing design skills.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3 text-center">
-                        <div style="width:208px;height:304px; margin: 0 auto" class="text-start p-2">
-                            <div class="step" style="height: 34px; overflow: hidden">O3</div>
-                            <div class="agHeader2 text-uppercase colorYellow">Difference</div>
-                            <div class="agHeader2">No export</div>
-                            <div class="agDescriptionText colorGreyLight">You've been producing in Asia for many years?
-                                It's time to
-                                venture into the local
-                                market.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3  text-center">
-                        <div style="width:208px;height:304px; margin: 0 auto" class="text-start card-active p-2">
-                            <div class="step" style="height: 34px; overflow: hidden">O4</div>
-                            <div class="agHeader2 text-uppercase colorYellow">Difference</div>
-                            <div class="agHeader2">Eco-responsible</div>
-                            <div class="agDescriptionText colorGreyLight">Mag2 is the only fashion solution seamlessly
-                                integrates
-                                eco-responsible
-                                functions.
-                            </div>
-                        </div>
-                    </div>
                 </div>
+                <div class="col-1"></div>
             </div>
-            <div class="col-1"></div>
         </div>
-    </div>
-    <!------------------------------------- OUR PRODUCT SECTION ----------------------------------------------------->
-    <div class="ourProduct-section">
-        <div class="row">
-            <div class="offset-1 col-md-5">
-                <div class="agText text-uppercase colorYellow">Products</div>
-                <div class="d-flex align-items-center">
-                    <div class="agTitle2 flex-grow-1">Creation</div>
-                    <a href="#" class="agDescriptionText">See video <i class="fa-solid fa-arrow-right"></i></a>
+        <!------------------------------------- OUR PRODUCT SECTION ----------------------------------------------------->
+        <div id="scrollspyProduct" class="ourProduct-section">
+            <div class="row">
+                <div class="offset-1 col-md-5">
+                    <div class="agText text-uppercase colorYellow">Products</div>
+                    <div class="d-flex align-items-center">
+                        <div class="agTitle2 flex-grow-1">Creation</div>
+                        <a href="#" class="agDescriptionText">See video <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="agDescriptionText">Fashion PLM ( product lifecycle management) app</div>
+                    <ul class="list-unstyled mt-3 ">
+                        <li class="lh-lg">
+                            <i class="fa-solid fa-circle-check me-2 colorYellow"></i><span class="agDescriptionText">Create product catalogs for sales</span>
+                        </li>
+                        <li class="lh-lg"><i class="fa-solid fa-circle-check me-2"></i><span class="agDescriptionText">Establish line direction</span>
+                        </li>
+                        <li class="lh-lg"><i class="fa-solid fa-circle-check me-2"></i><span class="agDescriptionText">Description materials</span>
+                        </li>
+                        <li class="lh-lg"><i class="fa-solid fa-circle-check me-2"></i><span class="agDescriptionText">Identify group concepts</span>
+                        </li>
+                        <li class="lh-lg"><i class="fa-solid fa-circle-check me-2"></i><span class="agDescriptionText">Analyze current line</span>
+                        </li>
+                    </ul>
+                    <button class="btnDownload">Download</button>
                 </div>
-                <div class="agDescriptionText">Fashion PLM ( product lifecycle management) app</div>
-                <ul class="list-unstyled mt-3 ">
-                    <li class="lh-lg">
-                        <i class="fa-solid fa-circle-check me-2 colorYellow"></i><span class="agDescriptionText">Create product catalogs for sales</span>
-                    </li>
-                    <li class="lh-lg"><i class="fa-solid fa-circle-check me-2"></i><span class="agDescriptionText">Establish line direction</span>
-                    </li>
-                    <li class="lh-lg"><i class="fa-solid fa-circle-check me-2"></i><span class="agDescriptionText">Description materials</span>
-                    </li>
-                    <li class="lh-lg"><i class="fa-solid fa-circle-check me-2"></i><span class="agDescriptionText">Identify group concepts</span>
-                    </li>
-                    <li class="lh-lg"><i class="fa-solid fa-circle-check me-2"></i><span class="agDescriptionText">Analyze current line</span>
-                    </li>
-                </ul>
-                <button class="btnDownload">Download</button>
-            </div>
-            <div class="col-md-5" style="display: flex; align-items: center; justify-content: center">
-                <div class="video"></div>
-            </div>
-            <div class="col-1"></div>
-        </div>
-        <div class="row">
-            <div class="offset-1 col-md-5" style="display: flex; align-items: center; justify-content: center">
-                <img src="assets/images/shopman.png" alt="shopman" class="video"/>
-            </div>
-            <div class="col-md-5">
-                <div class="d-flex align-items-center">
-                    <div class="agTitle2 flex-grow-1">Shopman</div>
-                    <div class="agDescriptionText"><a href="#">See video</a></div>
+                <div class="col-md-5" style="display: flex; align-items: center; justify-content: center">
+                    <div class="video"></div>
                 </div>
-                <p class="agDescriptionText">Shop management ERP (mobile)</p>
-                <ul class="mt-3 list-unstyled">
-                    <li class="lh-lg">
-                        <i class="fa-solid fa-circle-check colorPurple me-2"></i><span class="agDescriptionText">Inventory management</span>
-                    </li>
-                    <li class="lh-lg">
-                        <i class="fa-solid fa-circle-check colorPurple me-2"></i><span class="agDescriptionText">Expense records</span>
-                    </li>
-                    <li class="lh-lg">
-                        <i class="fa-solid fa-circle-check colorPurple me-2"></i><span class="agDescriptionText">Sales</span>
-                    </li>
-                    <li class="lh-lg">
-                        <i class="fa-solid fa-circle-check colorPurple me-2"></i><span class="agDescriptionText">Customer relationship</span>
-                    </li>
-                    <li class="lh-lg">
-                        <i class="fa-solid fa-circle-check colorPurple me-2"></i><span class="agDescriptionText">Exchange stock with other users</span>
-                    </li>
-                    <li class="lh-lg">
-                        <i class="fa-solid fa-circle-check colorPurple me-2"></i><span class="agDescriptionText">French brands’ direct supply</span>
-                    </li>
-                </ul>
-                <span class="mt-5" style="display: flex;">
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="offset-1 col-md-5" style="display: flex; align-items: center; justify-content: center">
+                    <img src="assets/images/shopman.png" alt="shopman" class="video"/>
+                </div>
+                <div class="col-md-5">
+                    <div class="d-flex align-items-center">
+                        <div class="agTitle2 flex-grow-1">Shopman</div>
+                        <div class="agDescriptionText"><a href="#">See video</a></div>
+                    </div>
+                    <p class="agDescriptionText">Shop management ERP (mobile)</p>
+                    <ul class="mt-3 list-unstyled">
+                        <li class="lh-lg">
+                            <i class="fa-solid fa-circle-check colorPurple me-2"></i><span class="agDescriptionText">Inventory management</span>
+                        </li>
+                        <li class="lh-lg">
+                            <i class="fa-solid fa-circle-check colorPurple me-2"></i><span class="agDescriptionText">Expense records</span>
+                        </li>
+                        <li class="lh-lg">
+                            <i class="fa-solid fa-circle-check colorPurple me-2"></i><span class="agDescriptionText">Sales</span>
+                        </li>
+                        <li class="lh-lg">
+                            <i class="fa-solid fa-circle-check colorPurple me-2"></i><span class="agDescriptionText">Customer relationship</span>
+                        </li>
+                        <li class="lh-lg">
+                            <i class="fa-solid fa-circle-check colorPurple me-2"></i><span class="agDescriptionText">Exchange stock with other users</span>
+                        </li>
+                        <li class="lh-lg">
+                            <i class="fa-solid fa-circle-check colorPurple me-2"></i><span class="agDescriptionText">French brands’ direct supply</span>
+                        </li>
+                    </ul>
+                    <span class="mt-5" style="display: flex;">
                 <button class="btnStore d-flex align-items-center me-4 py-2 px-4">
                     <i class="fa-brands fa-apple me-3" style="font-size: 1.5em"></i>
                     <span style="display: flex;flex-direction: column;align-items: center">
@@ -225,318 +223,268 @@
                     </span>
                 </button>
                 </span>
+                </div>
+                <div class="col-1"></div>
             </div>
-            <div class="col-1"></div>
         </div>
-    </div>
-    <!------------------------------------- OUR PROCESS SECTION ----------------------------------------------------->
-    <div class="ourProcess-section">
-        <div class="row">
-            <div class="offset-1 col-10  d-flex align-items-center">
-                <div class="flex-grow-1 agTitle">Building your sales network is easy</div>
-                <a href="#" class="text-decoration-none">
-                    <svg width="100px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke="#000000" stroke-width="1" d="M40 12L5 12M5 12L11 18M5 12L11 6"/>
-                    </svg>
-                </a>
-                <a href="#" class="text-decoration-none">
-                    <svg width="100px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke="#000000" stroke-width="1" d="M40 12L5 12M40 12L34 18M40 12L34 6"/>
-                    </svg>
-                </a>
+        <!------------------------------------- OUR PROCESS SECTION ----------------------------------------------------->
+        <div class="ourProcess-section">
+            <div class="row">
+                <div class="offset-1 col-10  d-flex align-items-center">
+                    <div class="flex-grow-1 agTitle">Building your sales network is easy</div>
+                    <a href="#" id="btnPrevProcess"  class="text-decoration-none">
+                        <svg width="100px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="#000000" stroke-width="1" d="M40 12L5 12M5 12L11 18M5 12L11 6"/>
+                        </svg>
+                    </a>
+                    <a href="#" id="btnNextProcess" class="text-decoration-none">
+                        <svg width="100px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="#000000" stroke-width="1" d="M40 12L5 12M40 12L34 18M40 12L34 6"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-1"></div>
             </div>
-            <div class="col-1"></div>
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <div id="carouselProcess" class="row"></div>
+                </div>
+                <div class="col-1"></div>
+            </div>
         </div>
-        <div class="row">
-            <div class="offset-1 col-10">
-                <div class="row">
-                    <div class="col-3">
-                        <div class="d-flex">
-                            <i class="fa fa-circle colorYellow"></i>
-                            <div class="flex-grow-1">
-                                <hr/>
+        <!------------------------------------- NEWS AND ARTICLES SECTION ----------------------------------------------------->
+        <div class="news-section">
+            <div class="row">
+                <div class="offset-1 col-10  d-flex align-items-center">
+                    <div class="flex-grow-1 agTitle">News & Articles</div>
+                    <a href="#" class="text-decoration-none">
+                        <svg width="100px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="#000000" stroke-width="1" d="M40 12L5 12M5 12L11 18M5 12L11 6"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                        <svg width="100px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="#000000" stroke-width="1" d="M40 12L5 12M40 12L34 18M40 12L34 6"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <div id="carouselNews" class="row">
+                        <div class="col-3 text-start px-4">
+                            <!--<div style="width:308px;height:304px; margin: 0 auto" class="text-start p-2">-->
+                            <div>
+                                <span class="day colorGrey">15</span>
+                                <span class="month colorYellow">oct</span>
+                            </div>
+                            <div class="agHead1">Thank you Start-up and Go</div>
+                            <div class="agDescriptionText colorGrey">We’re already established since 2012, and in 10 years
+                                we have
+                                lots
+                                of
+                                positive reviews and
+                                achievements
+                            </div>
+                            <a href="#" class="agDescriptionText colorGrey d-inline-block mt-4">See more
+                                <i class="fa fa-arrow-right"></i></a>
+                            <!--  </div>-->
+                        </div>
+                        <div class="col-3 text-start px-4">
+                            <!-- <div style="width:308px;height:304px; margin: 0 auto" class="text-start p-2">-->
+                            <div>
+                                <span class="day colorGrey">18</span>
+                                <span class="month colorYellow">nov</span>
+                            </div>
+                            <div class="agHead1">wake up to a better future. join us as CFO.</div>
+                            <div class="agDescriptionText colorGrey">Our craftsmen have lots of experience dealing with
+                                crafting
+                                furnitures
+                                and some of them have
+                                world class quality
+                            </div>
+                            <a href="#" class="agDescriptionText colorGrey d-inline-block mt-4">See more
+                                <i class="fa fa-arrow-right"></i></a>
+                            <!-- </div>-->
+                        </div>
+                        <div class="col-3 text-start px-4">
+                            <!-- <div style="width:350px;height:304px; margin: 0 auto" class="text-start p-2">-->
+                            <div>
+                                <span class="day colorGrey">22</span>
+                                <span class="month colorYellow">nov</span>
+                            </div>
+                            <div class="agHead1">Bring your ideas into a living product</div>
+                            <div class="agDescriptionText colorGrey">Besides you can buy the existing product, you can also
+                                consultate
+                                with
+                                us also to make your dream
+                                furniture
+                            </div>
+                            <a href="#" class="agDescriptionText colorGrey d-inline-block mt-4">See more
+                                <i class="fa fa-arrow-right"></i></a>
+                            <!-- </div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <!------------------------------------- OUR PARTNERS SECTION ----------------------------------------------------->
+        <div class="ourPartner-section">
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <div class="agTitle">Meet your future store partners</div>
+                    <div class="agDescriptionText">See what the shop owners are saying about the cooperation.</div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="position-relative">
+                                <a href="#" title="play" style="position: absolute;top:50%;left:50%;transform: translate(-50%,-50%)">
+                                    <i class="fa-duotone fa-circle-play fa-3x text-white"></i>
+                                </a>
+                                <img src="assets/images/img1.jpg" class="image" alt="img1"/>
+                            </div>
+                            <div class="agText mt-2">Shop owner</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="position-relative">
+                                <a href="#" title="play" style="position: absolute;top:50%;left:50%;transform: translate(-50%,-50%)">
+                                    <i class="fa-duotone fa-circle-play fa-3x text-white"></i>
+                                </a>
+                                <img src="assets/images/img2.jpg" class="image" alt="img2"/>
+                            </div>
+                            <p class="agText mt-2">Shop owner</p>
+                        </div>
+                        <div class="col-4 ">
+                            <div class="position-relative">
+                                <a href="#" title="play" style="position: absolute;top:50%;left:50%;transform: translate(-50%,-50%)">
+                                    <i class="fa-duotone fa-circle-play fa-3x text-white"></i>
+                                </a>
+                                <img src="assets/images/img3.jpg" class="image" alt="img3"/>
+                            </div>
+                            <p class="agText mt-2">Shop owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <!------------------------------------- CONTACT SECTION ----------------------------------------------------->
+        <div id="scrollspyContact" class="contact-section">
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <div class="rounded-5 d-flex flex-column justify-content-center align-items-center" style="height: 360px; background:   #FFC947;">
+                        <div class="agTitle text-center ">Want to talk to an<br>Asian market expert?</div>
+                        <button class="btnStore px-3 py-2 rounded-5 mt-4">Contact with us</button>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="agHeader2">News</div>
+                            <div class="mt-3 agDescriptionText">Enter your email address to get our latest update.</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="agHeader2">Waiting list</div>
+                            <div class="mt-3 agDescriptionText">We need to pre-qualify the brands we cooperate with. So please join
+                                the
+                                waiting list to
+                                ensure you get help as soon as possible.
                             </div>
                         </div>
-                        <div class="agHeader2 mt-2">Installation</div>
-                        <div class="agDescriptionText">Install Creation, our tutorial video will guide you to create
-                            your
-                            digital product catalog.
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="d-flex">
-                            <i class="fa fa-circle colorYellow"></i>
-                            <div class="flex-grow-1">
-                                <hr/>
+                        <div class="col-4">
+                            <div class="agHeader2">Contact</div>
+                            <div class="mt-3 agDescriptionText">
+                                17 Rue buffon, Grenoble, 38000, France
                             </div>
                         </div>
-                        <div class="agHeader2 mt-2">Publish</div>
-                        <div class="agDescriptionText">Publish your product catalog to Shopman with one click and start
-                            selling.
-                        </div>
                     </div>
-                    <div class="col-3">
-                        <div class="d-flex">
-                            <i class="fa fa-circle colorYellow"></i>
-                            <div class="flex-grow-1">
-                                <hr/>
-                            </div>
-                        </div>
-                        <div class="agHeader2 mt-2">Receive orders</div>
-                        <div class="agDescriptionText">Your Creation will receive orders from Shopman users.</div>
-                    </div>
-                    <div class="col-3">
-
-                        <div class="d-flex">
-                            <i class="fa fa-circle colorYellow"></i>
-                            <div class="flex-grow-1">
-                                <hr/>
-                            </div>
-                        </div>
-                        <div class="agHeader2 mt-2">Productions</div>
-                        <div class="agDescriptionText">After your production is completed, delivery the goods to Mag²'s
-                            warehouse. Mag² checks it out,
-                            pays you the balance and ends the transaction.
-                        </div>
-                    </div>
-                    <!--             <div class="col-3">
-                                     <div class="d-flex">
-                                         <i class="fa fa-circle colorYellow"></i>
-                                         <div class="flex-grow-1">
-                                             <hr />
-                                         </div>
-                                     </div>
-                                     <div class="fw-bolder mt-3" >Sales network</div>
-                                     <p>Your products wil appear in thousands of Asian stores. Your sales network is set.</p>
-                                 </div>-->
                 </div>
+                <div class="col-1"></div>
             </div>
-            <div class="col-1"></div>
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <div class="row">
+                        <div class="col-4">
+                            <form id="frmSubscribe">
+                                <label class="position-relative">
+                                    <input type="text" name="txtEmail" placeholder="your email" autocomplete="false"/>
+                                    <button>Subscribe</button>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="col-4">
+                            <form>
+                                <label class="position-relative">
+                                    <input type="text" placeholder="your email"/>
+                                    <button>Join now</button>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="col-4">
+                            <div class="agDescriptionText">0033 (0) 659-013-985</div>
+                            <div class="agDescriptionText">service@mag2-distribution.fr</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <div class="row">
+                        <div class="col-12 separator">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <div class="row">
+                        <div class="col-2">
+                            <a href="#" class="me-1"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" class="me-1"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="me-1"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#" class="agContentText text-decoration-none">Privacy policy</a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#" class="agContentText text-decoration-none">Terms of conditions</a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#" class="agContentText text-decoration-none">Support</a>
+                        </div>
+                        <div class="col-4 text-end">
+                            <div class="agContentText">© Mag² All Rights Reserved</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
         </div>
     </div>
-    <!------------------------------------- NEWS AND ARTICLES SECTION ----------------------------------------------------->
-    <div class="news-section">
-        <div class="row">
-            <div class="offset-1 col-10  d-flex align-items-center">
-                <div class="flex-grow-1 agTitle">News & Articles</div>
-                <a href="#" class="text-decoration-none">
-                    <svg width="100px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke="#000000" stroke-width="1" d="M40 12L5 12M5 12L11 18M5 12L11 6"/>
-                    </svg>
-                </a>
-                <a href="#" class="text-decoration-none">
-                    <svg width="100px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke="#000000" stroke-width="1" d="M40 12L5 12M40 12L34 18M40 12L34 6"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="col-1"></div>
-        </div>
-        <div class="row">
-            <div class="offset-1 col-10">
-                <div class="row">
-                    <div class="col-3 text-start px-4">
-                        <!--<div style="width:308px;height:304px; margin: 0 auto" class="text-start p-2">-->
-                        <div>
-                            <span class="day colorGrey">15</span>
-                            <span class="month colorYellow">oct</span>
-                        </div>
-                        <div class="agHead1">Thank you Start-up and Go</div>
-                        <div class="agDescriptionText colorGrey">We’re already established since 2012, and in 10 years
-                            we have
-                            lots
-                            of
-                            positive reviews and
-                            achievements
-                        </div>
-                        <a href="#" class="agDescriptionText colorGrey d-inline-block mt-4">See more
-                            <i class="fa fa-arrow-right"></i></a>
-                        <!--  </div>-->
-                    </div>
-                    <div class="col-3 text-start px-4">
-                        <!-- <div style="width:308px;height:304px; margin: 0 auto" class="text-start p-2">-->
-                        <div>
-                            <span class="day colorGrey">18</span>
-                            <span class="month colorYellow">nov</span>
-                        </div>
-                        <div class="agHead1">wake up to a better future. join us as CFO.</div>
-                        <div class="agDescriptionText colorGrey">Our craftsmen have lots of experience dealing with
-                            crafting
-                            furnitures
-                            and some of them have
-                            world class quality
-                        </div>
-                        <a href="#" class="agDescriptionText colorGrey d-inline-block mt-4">See more
-                            <i class="fa fa-arrow-right"></i></a>
-                        <!-- </div>-->
-                    </div>
-                    <div class="col-3 text-start px-4">
-                        <!-- <div style="width:350px;height:304px; margin: 0 auto" class="text-start p-2">-->
-                        <div>
-                            <span class="day colorGrey">22</span>
-                            <span class="month colorYellow">nov</span>
-                        </div>
-                        <div class="agHead1">Bring your ideas into a living product</div>
-                        <div class="agDescriptionText colorGrey">Besides you can buy the existing product, you can also
-                            consultate
-                            with
-                            us also to make your dream
-                            furniture
-                        </div>
-                        <a href="#" class="agDescriptionText colorGrey d-inline-block mt-4">See more
-                            <i class="fa fa-arrow-right"></i></a>
-                        <!-- </div>-->
-                    </div>
-                </div>
-            </div>
-            <div class="col-1"></div>
-        </div>
-    </div>
-    <!------------------------------------- OUR PARTNERS SECTION ----------------------------------------------------->
-    <div class="ourPartner-section">
-        <div class="row">
-            <div class="offset-1 col-10">
-                <div class="agTitle">Meet your future store partners</div>
-                <div class="agDescriptionText">See what the shop owners are saying about the cooperation.</div>
-            </div>
-            <div class="col-1"></div>
-        </div>
-        <div class="row">
-            <div class="offset-1 col-10">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="position-relative">
-                            <a href="#" title="play" style="position: absolute;top:50%;left:50%;transform: translate(-50%,-50%)">
-                                <i class="fa-duotone fa-circle-play fa-3x text-white"></i>
-                            </a>
-                            <img src="assets/images/img1.jpg" class="image" alt="img1"/>
-                        </div>
-                        <div class="agText mt-2">Shop owner</div>
-                    </div>
-                    <div class="col-4">
-                        <div class="position-relative">
-                            <a href="#" title="play" style="position: absolute;top:50%;left:50%;transform: translate(-50%,-50%)">
-                                <i class="fa-duotone fa-circle-play fa-3x text-white"></i>
-                            </a>
-                            <img src="assets/images/img2.jpg" class="image" alt="img2"/>
-                        </div>
-                        <p class="agText mt-2">Shop owner</p>
-                    </div>
-                    <div class="col-4 ">
-                        <div class="position-relative">
-                            <a href="#" title="play" style="position: absolute;top:50%;left:50%;transform: translate(-50%,-50%)">
-                                <i class="fa-duotone fa-circle-play fa-3x text-white"></i>
-                            </a>
-                            <img src="assets/images/img3.jpg" class="image" alt="img3"/>
-                        </div>
-                        <p class="agText mt-2">Shop owner</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1"></div>
-        </div>
-    </div>
-    <!------------------------------------- CONTACT SECTION ----------------------------------------------------->
-    <div class="contact-section">
-        <div class="row">
-            <div class="offset-1 col-10">
-                <div class="rounded-5 d-flex flex-column justify-content-center align-items-center" style="height: 360px; background:   #FFC947;">
-                    <div class="agTitle text-center ">Want to talk to an<br>Asian market expert?</div>
-                    <button class="btnStore px-3 py-2 rounded-5 mt-4">Contact with us</button>
-                </div>
-            </div>
-            <div class="col-1"></div>
-        </div>
-        <div class="row">
-            <div class="offset-1 col-10">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="agHeader2">News</div>
-                        <div class="mt-3 agDescriptionText">Enter your email address to get our latest update.</div>
-                    </div>
-                    <div class="col-4">
-                        <div class="agHeader2">Waiting list</div>
-                        <div class="mt-3 agDescriptionText">We need to pre-qualify the brands we cooperate with. So please join
-                            the
-                            waiting list to
-                            ensure you get help as soon as possible.
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="agHeader2">Contact</div>
-                        <div class="mt-3 agDescriptionText">
-                            17 Rue buffon, Grenoble, 38000, France
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1"></div>
-        </div>
-        <div class="row">
-            <div class="offset-1 col-10">
-                <div class="row">
-                    <div class="col-4">
-                        <form id="frmSubscribe">
-                            <label class="position-relative">
-                                <input type="text" name="txtEmail" placeholder="your email" autocomplete="false"/>
-                                <button>Subscribe</button>
-                            </label>
-                        </form>
-                    </div>
-                    <div class="col-4">
-                        <form>
-                            <label class="position-relative">
-                                <input type="text" placeholder="your email"/>
-                                <button>Join now</button>
-                            </label>
-                        </form>
-                    </div>
-                    <div class="col-4">
-                        <div class="agDescriptionText">0033 (0) 659-013-985</div>
-                        <div class="agDescriptionText">service@mag2-distribution.fr</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1"></div>
-        </div>
-        <div class="row">
-            <div class="offset-1 col-10">
-                <div class="row">
-                    <div class="col-12 separator">
-                    </div>
-                </div>
-            </div>
-            <div class="col-1"></div>
-        </div>
-        <div class="row">
-            <div class="offset-1 col-10">
-                <div class="row">
-                    <div class="col-2">
-                        <a href="#" class="me-1"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#" class="me-1"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="me-1"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <div class="col-2">
-                        <a href="#" class="agContentText text-decoration-none">Privacy policy</a>
-                    </div>
-                    <div class="col-2">
-                        <a href="#" class="agContentText text-decoration-none">Terms of conditions</a>
-                    </div>
-                    <div class="col-2">
-                        <a href="#" class="agContentText text-decoration-none">Support</a>
-                    </div>
-                    <div class="col-4 text-end">
-                        <div class="agContentText">© Mag² All Rights Reserved</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1"></div>
-        </div>
+    <div id="sizeDetector" style="font-size: .5em">
+        <div id="XS"  data-col="1" class="d-block d-sm-none is-XS" >xs - inf 576px - carousel col 1</div>
+        <div id="SM"  data-col="2" class="d-none d-sm-block d-md-none is-SM" >sm ≥576px - carousel col 2</div>
+        <div id="MD"  data-col="3" class="d-none d-md-block d-lg-none is-MD" >md ≥768px - carousel col 3</div>
+        <div id="LG"  data-col="4"  class="d-none d-lg-block d-xl-none is-LG" >lg ≥992px - carousel col 4</div>
+        <div id="XL"  data-col="4" class="d-none d-xl-block  d-xxl-none is-XL" >xl ≥1200px - carousel col 4</div>
+        <div id="XXL" data-col="4" class="d-none d-xxl-block is-XXL" >xxl ≥1400px - carousel col 4</div>
     </div>
 </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.12.0/d3.min.js"></script>
+<script src="assets/js/bootstrap.min.js" ></script>
+<script src="assets/js/script.js" ></script>
 <script>
     document.getElementById("frmSubscribe").addEventListener("submit", function (e) {
         e.preventDefault()
@@ -556,7 +504,6 @@
                 });
             });
         });
-
     })
 </script>
 </body>
