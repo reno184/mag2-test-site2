@@ -11,161 +11,153 @@ body{
     font-display: swap;
     src: url(../webfonts/impact.ttf);
 }
-
-
-.mag2 ul{
-    list-style: none;
-    padding-left: 0;
+/**************************** BUTTON AND INPUT  ****************/
+.btnMenuTop{
+    background-color: #333;
+    border: none;
+    color: #fff;
+    transition: background-color .5s;
 }
-.mag2 li{
-    line-height: 2em;
-}
-
-.nav-link.active{
-    font-weight: bold;
-}
-
-.mag2 .btn-secondary{
-    background: #333;
+.btnMenuTop:hover{
+    background-color: #555;
     color: #fff;
 }
 
-.grecaptcha-badge{
-    display: none;
+.btnDownload{
+    background-color: #D8D8D8;
+    border-radius: 30px;
+    border: none;
+    font-size: 90%;
+    padding: 10px 50px;
+    color:#fff;
+    transition: background-color .5s;
+}
+.btnDownload:hover{
+    background-color:#ccc;
 }
 
+.btnStore{
+    background-color: #18181B;
+    color:#fff;
+    border: none;
+    border-radius: 30px;
+    transition: background-color .5s;
+}
+.btnStore:hover{
+    background-color: #222;
+}
+
+
+/**************************** FONT FIGMA CLASSES  ****************/
 .slogan{
     font-size: 80px;
     font-family: 'Impact', sans-serif;
 }
-
-.agTtitle{
+.agTitle{
     font-size: 52px;
     font-family: 'Impact', sans-serif;
 }
-
-.agDescriptionText{
-    font-size: 18px;
-}
-
-.agContentText{
-    font-size: 20px;
-}
-
-.agText{
+.agTitle2{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 50px;
 }
-
+.step, .day{
+    font-size: 40px;
+    font-weight: bold;
+}
 .agHead1{
     font-weight: bold;
     font-size: 26px;
+}
+.agText{
+    font-weight: bold;
+    font-size: 24px;
 }
 .agHeader2{
     font-weight: bold;
     font-size: 20px;
 }
-
-.agTitle2{
-    font-weight: bold;
-    font-size: 50px;
+.agContentText{
+    font-size: 20px;
 }
-
-.step, .day{
-    font-size: 40px;
-    font-weight: bold;
-}
-
 .month{
     font-size: 18px;
     font-weight:bold;
 }
-
+.agDescriptionText{
+    font-size: 18px;
+}
+/**************************** COLOR DESIGN SYSTEM ****************/
 .colorWhite{
     color:#fff;
 }
-
-.colorWhite a{
-    color:#fff;
-}
-
 .colorGreyLight{
     color:#808080;
 }
-
 .colorGrey{
     color:#ccc;
 }
-
 .colorYellow{
     color:#F4D509;
 }
-
-.bgDark{
+.colorPurple{
+    color:#AA7FF5
+}
+/****************************SECTIONS FIGMA HEIGHT AND PADDING ****************/
+.navigation-section{
+    height: 114px;
+}
+.intro-section {
+    height: 1048px;
+    padding-bottom: 141px;
+}
+.aboutUs-section{
+    height: 1043px;
+}
+.ourProduct-section{
+    height: 1430px;
     background:#333;
     color:#fff;
 }
-
-.bgDark a{
+.ourProcess-section{
+    height: 616px;
+    padding: 80px 0;
+}
+.news-section {
+    height: 609px;
+    padding: 80px 0;
+}
+.ourPartner-section{
+    height: 636px;
+    padding-top: 48px;
+    padding-bottom: 102px;
+}
+.contact-section{
+    height:971px;
+    padding-top: 120px;
+    background:#333;
     color:#fff;
 }
-
+/**************************** UTILITIES ****************/
+.ab-center-center{
+    position: absolute;top:50%;left:50%;transform: translate(-50%,-50%)
+}
+.nav-link.active{
+    font-weight: bold;
+}
+/**/
+.grecaptcha-badge{
+    display: none;
+}
 .card-active{
     border-radius: 25px;
     background: rgba(244, 213, 9, 0.20);
 }
 
-.navTop{
-    height: 114px;
-    background: red!important;
-}
-.frame13796 {
-    height: 1048px;
-}
-.diese2{
-    height: 1043px;
-}
-.black1{
-    height: 726px;
-}
-.black2{
-    height: 702px;
-}
-.process{
-    height: 616px;
-    padding: 80px;
-}
-.newAndArticles {
-    height: 609px;
-    padding: 80px 0;
-}
-
-
-
-.slide5 ul.creation  li.active i{
-    color: #F4D509;
-}
-
-.slide5 ul.shopman li.active i{
-    color: #AA7FF5;
-}
-
-.slide5 button{
-    border: none;
-    color:#fff;
-    font-weight: bold;
-    border-radius: 20px;
-}
-.slide5 button.download{
-    background: #D8D8D8;
-    font-size: 90%;
-    padding: 10px 50px;
-    color:#fff;
-}
-.slide5 button.store{
-    background: #18181B;
-    padding: 10px 20px ;
-    color:#fff;
+.ourProcess hr {
+    margin: 7px 0 0 5px;
+    border-top: solid 2px #F4D509;
+    border-bottom: solid 2px #F4D509;
 }
 .slide5 .video{
     border-radius: 20px;
@@ -177,82 +169,20 @@ body{
     border-radius: 25px;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    width: 100%;
+    width:500px;
 }
 
-
-.slide6 .fa-circle{
-    color: #F4D509
-}
-.slide6 hr {
-    margin: 7px 0 0 5px;
-    border-top: solid 2px #F4D509;
-    border-bottom: solid 2px #F4D509;
-}
-
-
-/* slide 8  */
-.slide8{
-    height: 500px;
-    overflow: hidden;
-}
 .slide8 .content{
     position: absolute;
     top: 0;
     left:0;
     z-index: 1;
 }
-
-.slide8 svg{
-    position: absolute;
-    top:0;
-    right: 0;
-    fill:  #F4D509;;
-}
-.slide8 .image{
+.image{
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }
-.slide8 .col-4 p{
-    margin: 5px 0;
-    font-size: 120%;
-    font-weight: bold;
-}
-.slide8 .col-4 a{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
-.slide9{
-    background: #333;
-}
-.slide9 .content{
-    border-radius: 50px;
-    height: 400px;
-    width: 100%;
-    background: #FFC947;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.slide9 .content div{
-    font-size: 300%;
-    font-weight: bold;
-}
-.slide9 .content button{
-    margin-top: 20px;
-    border: none;
-    border-radius: 10px;
-    background: #333;
-    padding: 10px 20px ;
-}
-.slide10 {
-    background: #333;
-}
-
 .slide10 input{
     background: #444;
     padding: 6px  100px 6px 10px;
@@ -273,8 +203,6 @@ body{
     padding: 3px 20px ;
     color:#333;
 }
-
-
 .slide11 .separator{
     border-top: solid 1px white;
     padding-bottom: 20px;
