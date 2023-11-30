@@ -187,49 +187,10 @@ form:invalid label.inputMail > button{
     background: rgba(244, 213, 9, 0.20);
 }
 
-.ourProcess hr {
-    margin: 7px 0 0 5px;
-    border-top: solid 2px #F4D509;
-    border-bottom: solid 2px #F4D509;
-}
-.slide5 .video{
-    border-radius: 20px;
-    width:80%;
-    height: 80%;
-    background: #777;
-}
-.slide5 .video{
-    border-radius: 25px;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    width:500px;
-}
-
-.slide8 .content{
-    position: absolute;
-    top: 0;
-    left:0;
-    z-index: 1;
-}
 .image{
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-}
-
-.slide10 button{
-    position: absolute;
-    right:0;
-    top:5px;
-    border: none;
-    border-radius: 15px;
-    background: #F4D509;
-    padding: 3px 20px ;
-    color:#333;
-}
-.slide11 .separator{
-    border-top: solid 1px white;
-    padding-bottom: 20px;
 }
 
 
