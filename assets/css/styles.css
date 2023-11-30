@@ -47,6 +47,40 @@ body{
     background-color: #222;
 }
 
+label.inputMail{
+    position: relative;
+    display: inline-block;
+}
+
+label.inputMail > input{
+    font-size: 0.8em;
+    line-height: 30px;
+    color:#ccc;
+    background: #5c5c5c;
+    padding: 7px 100px 7px 10px;
+    border: solid 1px #5c5c5c;
+    border-radius: 30px;
+    outline: none;
+}
+
+label.inputMail > button{
+    font-size: 0.8em;
+    cursor: pointer;
+    font-weight: bold;
+    background: #F4D509;
+    position: absolute;
+    width: 100px;
+    right: 4px;
+    top: 4px;
+    height: 37px;
+    border: none;
+    border-radius: 40px;
+    transition: all 1s;
+}
+form:invalid label.inputMail > button{
+    opacity: 0.5;
+    cursor: default;
+}
 
 /**************************** FONT FIGMA CLASSES  ****************/
 .slogan{
@@ -145,7 +179,6 @@ body{
 .nav-link.active{
     font-weight: bold;
 }
-/**/
 .grecaptcha-badge{
     display: none;
 }
@@ -183,16 +216,7 @@ body{
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }
-.slide10 input{
-    background: #444;
-    padding: 6px  100px 6px 10px;
-    border: solid 1px #444;
-    border-radius: 20px;
-    outline: none;
-}
-.slide10 input:focus{
-    outline: none;
-}
+
 .slide10 button{
     position: absolute;
     right:0;
@@ -210,6 +234,3 @@ body{
 
 
 
-.circle{
-    stroke: #F4D509;
-}
