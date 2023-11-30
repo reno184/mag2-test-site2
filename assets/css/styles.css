@@ -180,6 +180,35 @@ form:invalid label.inputMail > button{
     background:#333;
     color:#fff;
 }
+@media screen and (max-width: 768px) {
+    .intro-section {
+        padding-top: 10px;
+        padding-bottom: 14px;
+    }
+    .aboutUs-section{
+        padding-bottom: 13px;
+    }
+    .ourProduct-section{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background:#fff;
+        color:#333;
+    }
+    .ourProcess-section{
+        padding: 10px 0;
+    }
+    .news-section {
+        padding: 10px 0;
+    }
+    .ourPartner-section{
+        padding-bottom: 10px;
+    }
+    .contact-section{
+        padding-top: 20px;
+        background:#fff;
+        color:#333;
+    }
+}
 
 .bgEllipse{
     background: #fff   url(/assets/images/Ellipse.png) no-repeat left 50px bottom -50px ;
