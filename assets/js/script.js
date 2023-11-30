@@ -9,7 +9,6 @@ function CreateOurProcessData(){
     ]
 }
 
-
 function CreateSizeDetector(){
     let _size;
     let _visibleCol;
@@ -69,14 +68,14 @@ function CreateNavButton(idPrevBtn, idNextBtn, visibleCol, originalTab){
         },
         react : function(position){
             if (position === 0) {
-                btnPrev.style.opacity= .5
+                btnPrev.style.opacity= .3
                 btnPrev.setAttribute('disabled', 'true')
             } else {
                 btnPrev.style.opacity=1
                 btnPrev.removeAttribute('disabled')
             }
             if (position + visibleCol === originalTab.length) {
-                btnNext.style.opacity= .5
+                btnNext.style.opacity= .3
                 btnNext.setAttribute('disabled', 'true')
             } else {
                 btnNext.style.opacity=1
@@ -94,17 +93,14 @@ function CreateCarousel(carouselId){
             const cols = panel.selectAll('.col-12').data(newTabs)
             const contents = panel.selectAll('.content').data(newTabs)
 
-            const div1 = d3.select('d-flex').html('<i class="fa fa-circle colorYellow"></i><div class="flex-grow-1"><hr/></div>')
 
             cols.enter().append("div").attr("class", "col-12 col-sm-6 col-md-4 col-lg-3")
                 .html((d)=>{
-                    return ` 
-                        <div class="d-flex">
-                            <i class="fa fa-circle colorYellow"></i>
-                            <div class="flex-grow-1">
-                                <hr/>
-                            </div>
-                        </div>
+                    return `  
+                         <svg width="80%" height="40px"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="15" fill="#F4D509" ></circle>
+                            <path stroke="#F4D509" stroke-linecap="round" stroke-width="2" d="M900 15L60 15"/>
+                        </svg>
                         <div class="content">
                           <div class="agHeader2 mt-2">${d.title}</div>
                             <div class="agDescriptionText">${d.content}</div>
@@ -132,14 +128,15 @@ function CreateCarousel(carouselId){
 
 /**************************************     INIT WINDOW EVENTS      *******************************************/
 const sizeDetector = CreateSizeDetector()
+
 /**************************************     INIT --OUR PROCESS-- CAROUSEL      *******************************************/
 
 const dataProcess = CreateOurProcessData()
+
 const carouselProcess = CreateCarousel('carouselProcess')
+
 const btnNavProcess = CreateNavButton('btnPrevProcess', 'btnNextProcess',sizeDetector.visibleCol, dataProcess)
+
 const position = CreatePosition(carouselProcess, btnNavProcess,sizeDetector.visibleCol, dataProcess)
+
 btnNavProcess.trigger(position)
-
-
-
-

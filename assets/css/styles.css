@@ -199,11 +199,17 @@ body{
     top:5px;
     border: none;
     border-radius: 15px;
-    background: #FFC947;
+    background: #F4D509;
     padding: 3px 20px ;
     color:#333;
 }
 .slide11 .separator{
     border-top: solid 1px white;
     padding-bottom: 20px;
+}
+
+
+
+.circle{
+    stroke: #F4D509;
 }

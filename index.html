@@ -234,11 +234,13 @@
                     <div class="flex-grow-1 agTitle">Building your sales network is easy</div>
                     <a href="#" id="btnPrevProcess"  class="text-decoration-none">
                         <svg width="100px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="12" r="10" class="circle" fill="transparent" ></circle>
                             <path stroke="#000000" stroke-width="1" d="M40 12L5 12M5 12L11 18M5 12L11 6"/>
                         </svg>
                     </a>
                     <a href="#" id="btnNextProcess" class="text-decoration-none">
-                        <svg width="100px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="150px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="35" cy="12" r="10" class="circle" fill="transparent" ></circle>
                             <path stroke="#000000" stroke-width="1" d="M40 12L5 12M40 12L34 18M40 12L34 6"/>
                         </svg>
                     </a>
@@ -257,16 +259,6 @@
             <div class="row">
                 <div class="offset-1 col-10  d-flex align-items-center">
                     <div class="flex-grow-1 agTitle">News & Articles</div>
-                    <a href="#" class="text-decoration-none">
-                        <svg width="100px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke="#000000" stroke-width="1" d="M40 12L5 12M5 12L11 18M5 12L11 6"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="text-decoration-none">
-                        <svg width="100px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke="#000000" stroke-width="1" d="M40 12L5 12M40 12L34 18M40 12L34 6"/>
-                        </svg>
-                    </a>
                 </div>
                 <div class="col-1"></div>
             </div>
@@ -280,15 +272,12 @@
                                 <span class="month colorYellow">oct</span>
                             </div>
                             <div class="agHead1">Thank you Start-up and Go</div>
-                            <div class="agDescriptionText colorGrey">We’re already established since 2012, and in 10 years
-                                we have
-                                lots
-                                of
-                                positive reviews and
-                                achievements
+                            <div class="agDescriptionText colorGrey">We’re already established since 2012, and in 10 years we have lots of positive reviews and achievements
+                                <div id="newOne" class="collapse ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam at illum non provident soluta voluptate. Corporis deserunt eaque iure laudantium magnam minima, molestias nostrum numquam omnis reiciendis repellat, soluta.</div>
                             </div>
-                            <a href="#" class="agDescriptionText colorGrey d-inline-block mt-4">See more
+                            <a href="#" title="read more" data-bs-toggle="collapse" data-bs-target="#newOne" aria-expanded="false" aria-controls="newOne" class="btnReadMore agDescriptionText colorGrey d-inline-block mt-4">See more
                                 <i class="fa fa-arrow-right"></i></a>
+
                             <!--  </div>-->
                         </div>
                         <div class="col-3 text-start px-4">
@@ -482,10 +471,15 @@
         <div id="XXL" data-col="4" class="d-none d-xxl-block is-XXL" >xxl ≥1400px - carousel col 4</div>
     </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.12.0/d3.min.js"></script>
+<script src="assets/js/d3.min.js"></script>
 <script src="assets/js/bootstrap.min.js" ></script>
 <script src="assets/js/script.js" ></script>
 <script>
+
+
+
+
+
     document.getElementById("frmSubscribe").addEventListener("submit", function (e) {
         e.preventDefault()
         const form = e.target
