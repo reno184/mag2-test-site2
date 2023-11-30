@@ -69,16 +69,20 @@ function CreateNavButton(idPrevBtn, idNextBtn, visibleCol, originalTab){
         react : function(position){
             if (position === 0) {
                 btnPrev.style.opacity= .3
+                btnPrev.querySelector('circle').style.opacity= 0
                 btnPrev.setAttribute('disabled', 'true')
             } else {
                 btnPrev.style.opacity=1
+                btnPrev.querySelector('circle').style.opacity= 1
                 btnPrev.removeAttribute('disabled')
             }
             if (position + visibleCol === originalTab.length) {
                 btnNext.style.opacity= .3
+                btnNext.querySelector('circle').style.opacity= 0
                 btnNext.setAttribute('disabled', 'true')
             } else {
                 btnNext.style.opacity=1
+                btnNext.querySelector('circle').style.opacity= 1
                 btnNext.removeAttribute('disabled')
             }
         }
@@ -98,8 +102,8 @@ function CreateCarousel(carouselId){
                 .html((d)=>{
                     return `  
                          <svg width="80%" height="40px"  fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="15" cy="15" r="15" fill="#F4D509" ></circle>
-                            <path stroke="#F4D509" stroke-linecap="round" stroke-width="2" d="M900 15L60 15"/>
+                            <circle cx="12" cy="12" r="12" fill="#F4D509" ></circle>
+                            <path stroke="#F4D509" stroke-linecap="round" stroke-width="2" d="M900 12L50 12"/>
                         </svg>
                         <div class="content">
                           <div class="agHeader2 mt-2">${d.title}</div>

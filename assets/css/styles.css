@@ -78,7 +78,7 @@ label.inputMail > button{
     transition: all 1s;
 }
 form:invalid label.inputMail > button{
-    opacity: 0.5;
+    opacity: 0.6;
     cursor: default;
 }
 
@@ -89,6 +89,7 @@ form:invalid label.inputMail > button{
 }
 .agTitle{
     font-size: 52px;
+    line-height: 68px;
     font-family: 'Impact', sans-serif;
 }
 .agTitle2{
@@ -137,40 +138,58 @@ form:invalid label.inputMail > button{
 .colorPurple{
     color:#AA7FF5
 }
+.colorDark{
+    color:#333
+}
 /****************************SECTIONS FIGMA HEIGHT AND PADDING ****************/
 .navigation-section{
-    height: 114px;
+
 }
 .intro-section {
-    height: 1048px;
+    padding-top: 100px;
+  /*  min-height: 1048px;*/
     padding-bottom: 141px;
 }
 .aboutUs-section{
-    height: 1043px;
+  /*  height: 1043px;*/
+    padding-bottom: 130px;
 }
 .ourProduct-section{
-    height: 1430px;
+    padding-top: 126px;
+   /* height: 1430px;*/
     background:#333;
     color:#fff;
+    padding-bottom: 120px;
 }
 .ourProcess-section{
-    height: 616px;
-    padding: 80px 0;
+   /* height: 616px;*/
+    padding: 120px 0;
 }
 .news-section {
-    height: 609px;
-    padding: 80px 0;
+/*    height: 609px;*/
+    padding: 120px 0;
 }
 .ourPartner-section{
-    height: 636px;
+   /* height: 636px;*/
     padding-top: 48px;
     padding-bottom: 102px;
 }
 .contact-section{
-    height:971px;
+  /*  height:971px;*/
     padding-top: 120px;
     background:#333;
     color:#fff;
+}
+
+.bgEllipse{
+    background: #fff   url(/assets/images/Ellipse.png) no-repeat left 50px bottom -50px ;
+}
+
+.bgDot{
+    background: #fff   url(/assets/images/vectorGuillemet.png) no-repeat right 10px center ;
+}
+.bgVector{
+    background: #FFC947   url(/assets/images/vectorArrow.png) no-repeat right 100px center ;
 }
 /**************************** UTILITIES ****************/
 .ab-center-center{
