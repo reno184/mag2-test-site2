@@ -205,14 +205,14 @@ form:invalid label.inputMail > button{
     color:#fff;
 }
 .bgEllipse{
-    background: #fff   url("/assets/images/Ellipse.png") no-repeat left 50px bottom -50px ;
+    background: #fff   url("../images/Ellipse.png") no-repeat left 50px bottom -50px ;
 }
 .bgDot{
-    background: #fff   url("/assets/images/vectorGuillemet.png") no-repeat right 10px top 60px ;
+    background: #fff   url("../images/vectorGuillemet.png") no-repeat right 10px top 60px ;
 }
 .bgVector{
     position: relative;
-    background: #FFC947   url("/assets/images/vectorArrow.png") no-repeat right 100px center ;
+    background: #FFC947   url("../images/vectorArrow.png") no-repeat right 100px center ;
 }
 .bgVector:before{
     content: '';
@@ -222,7 +222,7 @@ form:invalid label.inputMail > button{
     width: 100%;
     height: 100%;
     opacity: .7;
-    background: transparent   url("/assets/images/shapes.png") no-repeat left -50px top ;
+    background: transparent   url("../images/shapes.png") no-repeat left -50px top ;
 }
 /**************************** UTILITIES ****************/
 .ab-center-center{
