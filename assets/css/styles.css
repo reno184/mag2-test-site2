@@ -212,7 +212,7 @@ form:invalid label.inputMail > button{
 }
 .bgVector{
     position: relative;
-    background: #FFC947   url("../images/vectorArrow.png") no-repeat right 100px center ;
+    background: #F4D509   url("../images/vectorArrow.png") no-repeat right 100px center ;
 }
 .bgVector:before{
     content: '';
@@ -231,9 +231,9 @@ form:invalid label.inputMail > button{
 .nav-link.active{
     font-weight: bold;
 }
-.grecaptcha-badge{
+/*.grecaptcha-badge{
     display: none;
-}
+}*/
 .card-active{
     border-radius: 25px;
     background: rgba(244, 213, 9, 0.20);
