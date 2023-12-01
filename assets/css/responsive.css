@@ -1,0 +1,89 @@
+@media screen and (max-width: 992px) {
+    .intro-section {
+        padding-top: 10px;
+        padding-bottom: 14px;
+    }
+    .aboutUs-section{
+        padding-bottom: 13px;
+    }
+    .aboutUs-section-row-1{
+        padding-bottom: 18px;
+    }
+    .ourProduct-section{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background: white;
+        color: #333;
+    }
+    .ourProcess-section{
+        padding: 10px 0;
+    }
+    .news-section {
+        padding: 10px 0;
+    }
+    .ourPartner-section{
+        padding-bottom: 10px;
+    }
+    .contact-section{
+        padding-top: 20px;
+        background: white;
+        color: #333;
+    }
+    .contact-section .colorGrey{
+        color: #333;
+    }
+    .contact-section a{
+        color: #333;
+    }
+    .contact-section a.btnContact{
+        color: #fff;
+    }
+    .slogan{
+        font-size: 60px;
+    }
+    .agTitle{
+        font-size: 42px;
+    }
+    .agTitle2{
+        font-size: 40px;
+    }
+    .step, .day{
+        font-size: 30px;
+    }
+    .agHead1{
+        font-size: 22px;
+    }
+    .agText{
+        font-size: 20px;
+    }
+    .agHeader2{
+        font-size: 16px;
+    }
+    .agContentText{
+        font-size: 16px;
+    }
+    .month{
+        font-size: 14px;
+    }
+    .agDescriptionText{
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 575px) {
+}
+@media  (min-width: 576px) and (max-width: 768px) {
+}
+@media (min-width: 769px) and (max-width: 992px) {
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+
+}
+@media (min-width: 993px)  {
+    .figmaHeight1{
+        min-height: 300px;
+    }
+    .customWidth1{
+        /*width: 210px*/
+    }
+}
