@@ -67,13 +67,18 @@ label.inputMail{
 label.inputMail > input{
     font-size: 0.8em;
     line-height: 30px;
-    color:#ccc;
-    background: #5c5c5c;
+    color:#efefef;
+    background: #808080;
     padding: 7px 100px 7px 10px;
-    border: solid 1px #5c5c5c;
+    border: solid 1px #808080;
     border-radius: 30px;
     outline: none;
 }
+
+label.inputMail > input::placeholder {
+    color: #efefef;
+}
+
 
 label.inputMail > button{
     font-size: 0.8em;
@@ -90,7 +95,8 @@ label.inputMail > button{
     transition: all 1s;
 }
 form:invalid label.inputMail > button{
-    opacity: 0.6;
+    background: #ccc;
+    color: #ededed;
     cursor: default;
 }
 
@@ -202,10 +208,14 @@ form:invalid label.inputMail > button{
 }
 
 .bgDot{
-    background: #fff   url(/assets/images/vectorGuillemet.png) no-repeat right 10px center ;
+    background: #fff   url(/assets/images/vectorGuillemet.png) no-repeat right 10px top 60px ;
 }
 .bgVector{
     background: #FFC947   url(/assets/images/vectorArrow.png) no-repeat right 100px center ;
+}
+.bgVector:before{
+    content: '';
+    background: #FFC947   url(/assets/images/shapes.png) no-repeat left 100px center ;
 }
 /**************************** UTILITIES ****************/
 .ab-center-center{
