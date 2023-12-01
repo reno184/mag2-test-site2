@@ -182,6 +182,9 @@ form:invalid label.inputMail > button{
     color:#fff;
     padding-bottom: 120px;
 }
+.ourProduct-section-row-2{
+    padding-top: 120px;
+}
 .ourProcess-section{
    /* height: 616px;*/
     padding: 120px 0;
@@ -201,21 +204,25 @@ form:invalid label.inputMail > button{
     background:#333;
     color:#fff;
 }
-
-
 .bgEllipse{
-    background: #fff   url(/assets/images/Ellipse.png) no-repeat left 50px bottom -50px ;
+    background: #fff   url("/assets/images/Ellipse.png") no-repeat left 50px bottom -50px ;
 }
-
 .bgDot{
-    background: #fff   url(/assets/images/vectorGuillemet.png) no-repeat right 10px top 60px ;
+    background: #fff   url("/assets/images/vectorGuillemet.png") no-repeat right 10px top 60px ;
 }
 .bgVector{
-    background: #FFC947   url(/assets/images/vectorArrow.png) no-repeat right 100px center ;
+    position: relative;
+    background: #FFC947   url("/assets/images/vectorArrow.png") no-repeat right 100px center ;
 }
 .bgVector:before{
     content: '';
-    background: #FFC947   url(/assets/images/shapes.png) no-repeat left 100px center ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    background: transparent   url("/assets/images/shapes.png") no-repeat left -50px top ;
 }
 /**************************** UTILITIES ****************/
 .ab-center-center{

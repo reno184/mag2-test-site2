@@ -15,6 +15,9 @@
         background: white;
         color: #333;
     }
+    .ourProduct-section-row-2{
+        padding-top: 48px;
+    }
     .ourProcess-section{
         padding: 48px 0;
     }
@@ -71,6 +74,10 @@
 }
 
 @media(max-width: 575px) {
+
+    .bgVector:before{
+        opacity: .2;
+    }
 }
 @media  (min-width: 576px) and (max-width: 768px) {
 }
