@@ -1,31 +1,31 @@
 @media screen and (max-width: 992px) {
     .intro-section {
-        padding-top: 10px;
-        padding-bottom: 14px;
+        padding-top: 48px;
+        padding-bottom: 48px;
     }
     .aboutUs-section{
-        padding-bottom: 13px;
+        padding-bottom: 48px;
     }
     .aboutUs-section-row-1{
-        padding-bottom: 18px;
+        padding-bottom: 48px;
     }
     .ourProduct-section{
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 48px;
+        padding-bottom: 48px;
         background: white;
         color: #333;
     }
     .ourProcess-section{
-        padding: 10px 0;
+        padding: 48px 0;
     }
     .news-section {
-        padding: 10px 0;
+        padding: 48px 0;
     }
     .ourPartner-section{
-        padding-bottom: 10px;
+        padding-bottom: 48px;
     }
     .contact-section{
-        padding-top: 20px;
+        padding-top: 48px;
         background: white;
         color: #333;
     }
