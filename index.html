@@ -68,15 +68,15 @@
             <div class="row mt-5">
                 <div class="col-12 offset-md-1 col-md-11 ps-0 pe-0">
                     <div class="position-relative">
-                        <img src="assets/images/bg-video.png" alt="video" class="d-block d-md-none" style="position: absolute; left: -10%; width: 120%; object-fit: cover;">
+                        <!-- clone video for responsive extra small devise -->
+                        <video autoplay muted loop playsinline poster="assets/images/bg-video1.png" class="d-block d-md-none" style="position: absolute; left: -10%; width: 100%; aspect-ratio: 16 / 9;" >
+                            <source src="assets/images/video_intro.mp4" type="video/mp4" />
+                        </video>
                         <div style="position: absolute;top:10px;left:20px">
                             <img src="assets/logo/logo_white.png" alt="logo" style=" width: 60px;vertical-align: center;">
                             <span class="agContentText colorWhite">The tiny puzzle that links you to vast market</span>
                         </div>
-                    <!--    <a href="#" title="play video" class="ab-center-center colorWhite">
-                            <i class="fa-brands fa-youtube colorWhite fa-3x"></i>
-                        </a>-->
-                        <video autoplay muted loop playsinline poster="assets/images/bg-video.png" style="width: 100%; aspect-ratio: 16 / 9;" >
+                        <video autoplay muted loop playsinline poster="assets/images/bg-video1.png" style="width: 100%; aspect-ratio: 16 / 9;" >
                             <source src="assets/images/video_intro.mp4" type="video/mp4" />
                         </video>
                      </div>
@@ -596,7 +596,7 @@
                 </div>
                 <button type="button" class="btn-close btn-sm btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
-        </div>
+        </div>cmcmd
         <div id="successToast" class="toast text-bg-secondary" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="d-flex">
                 <div class="toast-body colorYellow">
