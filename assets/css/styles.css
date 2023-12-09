@@ -142,22 +142,25 @@ form:invalid label.inputMail > button{
 }
 /**************************** COLOR DESIGN SYSTEM ****************/
 .colorWhite{
-    color:#fff;
+    color:#fff!important;
 }
 .colorGreyLight{
-    color:#808080;
+    color:#EDEDED!important;
 }
 .colorGrey{
-    color:#ccc;
+    color:#ccc!important;
+}
+.colorGreyDark{
+    color:#808080!important;
 }
 .colorYellow{
-    color:#F4D509;
+    color:#F4D509!important;
 }
 .colorPurple{
-    color:#AA7FF5
+    color:#AA7FF5!important;
 }
 .colorDark{
-    color:#333
+    color:#333!important;
 }
 /****************************SECTIONS FIGMA HEIGHT AND PADDING ****************/
 .navigation-section{
@@ -244,6 +247,5 @@ form:invalid label.inputMail > button{
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }
-
 /************************************************/
 

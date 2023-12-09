@@ -1,3 +1,52 @@
+@media(max-width: 575px) {
+    /* sur petit ecran on cache une partie des illustrations dans le panel contact pour un effet estetique */
+    .bgVector:before{
+        opacity: .2;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .logo{
+        width: 30px;
+    }
+
+    .btnContact{
+        font-size: .9rem;
+    }
+
+    .slogan{
+        font-size: 40px;
+    }
+
+    .agTitle{
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    .agTitle2{
+        font-size: 30px;
+    }
+
+    .expandVideo{
+        transform: scale(1.1);
+    }
+
+    .agContentText{
+        font-size: 14px;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+    .slogan{
+        font-size: 60px;
+    }
+    .agTitle{
+        font-size: 42px;
+    }
+    .agTitle2{
+        font-size: 40px;
+    }
+}
 @media screen and (max-width: 992px) {
     .intro-section {
         padding-top: 48px;
@@ -41,15 +90,7 @@
     .contact-section a.btnContact{
         color: #fff;
     }
-    .slogan{
-        font-size: 60px;
-    }
-    .agTitle{
-        font-size: 42px;
-    }
-    .agTitle2{
-        font-size: 40px;
-    }
+
     .step, .day{
         font-size: 30px;
     }
@@ -73,24 +114,9 @@
     }
 }
 
-@media(max-width: 575px) {
-
-    .bgVector:before{
-        opacity: .2;
-    }
-}
-@media  (min-width: 576px) and (max-width: 768px) {
-}
-@media (min-width: 769px) and (max-width: 992px) {
-}
-@media (min-width: 993px) and (max-width: 1200px) {
-
-}
 @media (min-width: 993px)  {
+    /* hauteur fixe sur grand ecran des panels nos differences*/
     .figmaHeight1{
         min-height: 300px;
-    }
-    .customWidth1{
-        /*width: 210px*/
     }
 }
