@@ -142,25 +142,25 @@ form:invalid label.inputMail > button{
 }
 /**************************** COLOR DESIGN SYSTEM ****************/
 .colorWhite{
-    color:#fff!important;
+    color:#fff;
 }
 .colorGreyLight{
-    color:#EDEDED!important;
+    color:#EDEDED;
 }
 .colorGrey{
-    color:#ccc!important;
+    color:#ccc;
 }
 .colorGreyDark{
-    color:#808080!important;
+    color:#808080;
 }
 .colorYellow{
-    color:#F4D509!important;
+    color:#F4D509;
 }
 .colorPurple{
-    color:#AA7FF5!important;
+    color:#AA7FF5;
 }
 .colorDark{
-    color:#333!important;
+    color:#333;
 }
 /****************************SECTIONS FIGMA HEIGHT AND PADDING ****************/
 .navigation-section{
