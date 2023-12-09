@@ -153,6 +153,11 @@ form:invalid label.inputMail > button{
 .colorGreyDark{
     color:#808080;
 }
+
+.colorGreyDark.disabled{
+    color:#EDEDED;
+}
+
 .colorYellow{
     color:#F4D509;
 }
@@ -175,7 +180,7 @@ form:invalid label.inputMail > button{
   /*  height: 1043px;*/
     padding-bottom: 130px;
 }
-.aboutUs-section-row-1{
+.aboutUs-sub-row-1{
     padding-bottom: 180px;
 }
 .ourProduct-section{
@@ -185,7 +190,7 @@ form:invalid label.inputMail > button{
     color:#fff;
     padding-bottom: 120px;
 }
-.ourProduct-section-row-2{
+.ourProduct-sub-row-2{
     padding-top: 120px;
 }
 .ourProcess-section{
@@ -205,8 +210,19 @@ form:invalid label.inputMail > button{
   /*  height:971px;*/
     padding-top: 120px;
     background:#333;
-    color:#fff;
 }
+
+.contact-section .colorWhite{
+       color: #fff
+}
+.contact-section .colorGreyDark{
+    color: #ccc
+}
+.contact-section .colorGreyDark.disabled{
+    color: #808080;
+    cursor:default;
+}
+
 .bgEllipse{
     background: #fff   url("../images/Ellipse.png") no-repeat left 50px bottom -50px ;
 }

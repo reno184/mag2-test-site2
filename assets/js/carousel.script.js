@@ -107,7 +107,7 @@ function CreateCarousel(carouselId){
                         </svg>
                         <div class="content">
                           <div class="agHeader2 mt-2">${d.title}</div>
-                            <div class="agDescriptionText">${d.content}</div>
+                            <div class="agDescriptionText colorGreyDark">${d.content}</div>
                         </div>`
                 })
             cols.exit().remove();
@@ -117,7 +117,7 @@ function CreateCarousel(carouselId){
                 .html((d)=>{
                     return `
                         <div class="agHeader2 mt-2">${d.title}</div>
-                        <div class="agDescriptionText">${d.content}</div>
+                        <div class="agDescriptionText colorGreyDark">${d.content}</div>
                       `
                 })
                 .transition()

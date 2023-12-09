@@ -55,7 +55,7 @@
     .aboutUs-section{
         padding-bottom: 48px;
     }
-    .aboutUs-section-row-1{
+    .aboutUs-sub-row-1{
         padding-bottom: 48px;
     }
     .ourProduct-section{
@@ -64,7 +64,7 @@
         background: white;
         color: #333;
     }
-    .ourProduct-section-row-2{
+    .ourProduct-sub-row-2{
         padding-top: 48px;
     }
     .ourProcess-section{
@@ -76,20 +76,21 @@
     .ourPartner-section{
         padding-bottom: 48px;
     }
+
     .contact-section{
         padding-top: 48px;
         background: white;
+    }
+    .contact-section .colorWhite{
         color: #333;
     }
-    .contact-section .colorGrey{
+    .contact-section .colorGreyDark{
         color: #333;
     }
-    .contact-section a{
-        color: #333;
+    .contact-section .colorGreyDark.disabled{
+        color: #dedede;
     }
-    .contact-section a.btnContact{
-        color: #fff;
-    }
+
 
     .step, .day{
         font-size: 30px;
